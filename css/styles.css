@@ -169,6 +169,28 @@ h3.sub-heading{
 h4 {
     font-size: 2.5em;
 }
+.trainer{
+    height: 450px;
+    display: flex;
+    flex-direction: column
+}
+.trainer>h2{
+    color: #b9cd33
+}
+.trainer:not(:last-child){
+    border-bottom: 2px solid #59B548;
+}
+.trainer>p{
+ flex: 1;
+ color: #b02840 !important;
+}
+#trainers .col-sm-12{
+    padding-left: 0;
+    padding-right: 0;
+}
+#trainers .col-sm-12:not(:last-child){
+    border-right: 2px solid #59B548;
+}
 @media (min-width: 768px){
     .mobile-only{display: none;}
      .desktop-only{
@@ -220,6 +242,12 @@ h4 {
     div.preset{
         overflow: auto;
         max-width: 100%;
+    }
+    .trainer{
+        border-bottom: 2px solid #59B548;
+    }
+    #trainers .col-sm-12{
+        border-right: none!important;
     }
 }
 
