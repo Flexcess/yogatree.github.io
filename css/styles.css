@@ -348,8 +348,13 @@ h4 {
         background-size: contain;
         height:750px;
     }
+     .bg.center{
+        align-items: flex-start;
+        margin-top: 40px;
+    }
 }
 @media only screen and (min-width: 981px){
+   
     #logo {
         /*max-height: 88%;*/
         width: 100px;
