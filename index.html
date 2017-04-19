@@ -10,6 +10,43 @@
         <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v2.1.0/dist/mini-default.min.css">
         <link rel="stylesheet" href="css/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <style>
+            table.double-header {
+                border-collapse: collapse;
+            }
+            
+            .double-header th {
+                width: 150px;
+            }
+            
+            .double-header td,
+            .double-header th {
+                border: 1px #ddd solid;
+                padding: 10px;
+            }
+            
+            .double-header {
+                margin: 20px 0;
+            }
+            
+            @media all and (min-width: 640px) {
+                .double-header {
+                    float: left;
+                }
+                .double-header~.double-header td,
+                .double-header~.double-header th {
+                    border-left: 0;
+                }
+                .double-header~.double-header tr:first-child th:first-child {
+                    display: none;
+                }
+                .double-header~.double-header tr:not(:first-child) th {
+                    display: none;
+                }
+            }
+            table.preset.double-header:nth-child(2n) td{ background: #A9D075; }
+            table.preset td.green { background: #59B548!important; color: #E8F4E5; }
+        </style>
     </head>
     <body>
         <header class="shadow-none bordered bd-bot">
@@ -71,7 +108,7 @@
                 </p>
                 <div class="col-sm-12 section preset">
                     <h3 class="t-center">Weekday</h3>
-                    <table class="preset shadow-none border-none">
+                    <table class="preset shadow-none border-none hideonmobile">
                         <tbody>
                             <tr>
                                 <th></th>
@@ -129,10 +166,168 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="mobile-only">
+                        <table class="double-header preset border-none shadow-none w-100">
+                            <tr>
+                                <th></th>
+                                <th scope="col">6:30 A.M.</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Monday</th>
+                                <td>Breathe & Stretch (Hatha Moderate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tuesday</th>
+                                <td>Flex & Twist (Hatha Moderate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Wednesday</th>
+                                <td>Strength & Stamina (Hatha Intense)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Thursday</th>
+                                <td>Restore & Renew (Pranayama, Meditation & Asana)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Friday</th>
+                                <td>Breaking Boundaries (Hatha Intense)</td>
+                            </tr>
+                        </table>
+                        <table class="double-header preset border-none shadow-none w-100">
+                            <tr>
+                                <th></th>
+                                <th scope="col">8:00 A.M.</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Monday</th>
+                                <td>Breathe & Stretch (Vinyasa Moderate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tuesday</th>
+                                <td class="green">Healing Touch (Iyengar Yoga therapy)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Wednesday</th>
+                                <td>Strength & Stamina (Vinyasa Flow)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Thursday</th>
+                                <td class="green">Healing Touch (Iyengar Yoga therapy)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Friday</th>
+                                <td>Hour With Power (Vinyasa Flow)</td>
+                            </tr>
+                        </table>
+                        <table class="double-header preset border-none shadow-none w-100">
+                            <tr>
+                                <th></th>
+                                <th scope="col">9:05 A.M.</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Monday</th>
+                                <td>Breathe & Stretch (Hatha Moderate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tuesday</th>
+                                <td>Flex & Twist (Hatha Moderate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Wednesday</th>
+                                <td>Strength & Stamina (Hatha Moderate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Thursday</th>
+                                <td>Restore & Renew (Pranayama, Meditation & Asana)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Friday</th>
+                                <td>Breaking Boundaries (Hatha Intense)</td>
+                            </tr>
+                        </table>
+                        <table class="double-header preset border-none shadow-none w-100">
+                            <tr>
+                                <th></th>
+                                <th scope="col">10:15 A.M.</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Monday</th>
+                                <td>Breathe & Stretch (Vinyasa Moderate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tuesday</th>
+                                <td>Flex & Twist (Hatha Intense)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Wednesday</th>
+                                <td>Strength & Stamina (Vinyasa Flow)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Thursday</th>
+                                <td>Restore & Renew (Pranayama, Meditation & Asana)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Friday</th>
+                                <td>Hour With Power (Vinyasa Flow)</td>
+                            </tr>
+                        </table>
+                        <table class="double-header preset border-none shadow-none w-100">
+                            <tr>
+                                <th></th>
+                                <th scope="col">5:30 P.M.</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Monday</th>
+                                <td>Breathe & Stretch (Hatha Moderate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tuesday</th>
+                                <td>Flex & Twist (Hatha Moderate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Wednesday</th>
+                                <td>Strength & Stamina (Hatha Moderate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Thursday</th>
+                                <td>Restore & Renew (Pranayama, Meditation & Asana)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Friday</th>
+                                <td>Breaking Boundaries (Hatha Intense)</td>
+                            </tr>
+                        </table>
+                        <table class="double-header preset border-none shadow-none w-100">
+                            <tr>
+                                <th></th>
+                                <th scope="col">7:00 P.M.</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Monday</th>
+                                <td>Breathe & Stretch (Vinyasa Moderate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tuesday</th>
+                                <td>Flex & Twist (Hatha Intense)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Wednesday</th>
+                                <td>Strength & Stamina (Vinyasa Flow)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Thursday</th>
+                                <td>Restore & Renew (Pranayama, Meditation & Asana)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Friday</th>
+                                <td>Hour With Power (Vinyasa Flow)</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="col-sm-12 section">
                     <h3>Weekend</h3>
-                    <table class="preset w-80 margin-none border-none shadow-none">
+                    <table class="preset w-80 margin-none border-none shadow-none hideonmobile">
                         <tbody>
                             <tr>
                                 <th></th>
@@ -154,6 +349,51 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="mobile-only">
+                        <table class="double-header preset border-none shadow-none w-100">
+                            <tr>
+                                <th></th>
+                                <th scope="col">7:00 A.M.</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Saturday</th>
+                                <td>Breathe & Balance (Hatha Moderate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sunday</th>
+                                <td>Breathe & Balance (Hatha Moderate)</td>
+                            </tr>
+
+                        </table>
+                        <table class="double-header preset border-none shadow-none w-100">
+                            <tr>
+                                <th></th>
+                                <th scope="col">8:30 A.M.</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Saturday</th>
+                                <td>Hour With Power (Vinyasa Flow)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sunday</th>
+                                <td>Hour With Power (Vinyasa Flow)</td>
+                            </tr>
+                        </table>
+                        <table class="double-header preset border-none shadow-none w-100">
+                            <tr>
+                                <th></th>
+                                <th scope="col">10:00 A.M.</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Saturday</th>
+                                <td>Move & Meditate (Hatha Moderate)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Sunday</th>
+                                <td>Move & Meditate (Hatha Moderate)</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
