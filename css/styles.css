@@ -169,7 +169,12 @@ h3.sub-heading{
 h4 {
     font-size: 2.5em;
 }
-
+@media (min-width: 768px){
+    .mobile-only{display: none;}
+     .desktop-only{
+        display: none;
+    }
+}
 @media only screen and (min-width: 981px){
     #logo {
         /*max-height: 88%;*/
@@ -182,11 +187,20 @@ h4 {
         padding-right: 30px;
         padding-left: 30px;
     }
+    .hide-desktop{
+        display: none;
+    }
+     .desktop-only{
+     display: block;   
+    }
 }
 
 @media (max-width: 767px) {
     h2{
         font-size: 4em;
+    }
+     .desktop-only{
+     display: none;   
     }
     .hideonmobile{
         display: none!important;
@@ -208,6 +222,4 @@ h4 {
         max-width: 100%;
     }
 }
-@media (min-width: 768px){
-    .mobile-only{display: none;}
-}
+
