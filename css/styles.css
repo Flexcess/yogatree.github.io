@@ -112,6 +112,21 @@ h2 {
 
 @media (max-width: 767px) {
     h2{
-        font-size: 3.5em;
+        font-size: 4em;
+    }
+    .hideonmobile{
+        display: none!important;
+    }
+    *, html {
+        font-size: 14px;
+    }
+    .bg{
+        background-size: contain;
+    }
+    .bg-venue{
+        height: 255px!important;
+    }
+    .bg-bldg, .bg-class{
+        height: 155px!important;        
     }
 }
