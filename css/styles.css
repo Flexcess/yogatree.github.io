@@ -109,3 +109,9 @@ h2 {
         padding-left: 30px;
     }
 }
+
+@media (max-width: 767px) {
+    h2{
+        font-size: 3.5em;
+    }
+}
