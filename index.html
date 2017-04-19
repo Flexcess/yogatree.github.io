@@ -9,7 +9,13 @@
         <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v2.1.0/dist/mini-default.min.css">
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!--<script type="text/javascript" src="slick/slick.min.js"></script>-->
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+        <script src="js/code.js"></script>
+        <script src="https://use.fontawesome.com/e08fedea5a.js"></script>
         <style>
             table.double-header {
                 border-collapse: collapse;
@@ -55,16 +61,38 @@
                     <img src="images/logo.png" alt="Yogatree" id="logo">
                 </a>
                 <span class="col-sm-offset-9 input-group fluid">
-                    <a href="#" class="button">Studio</a>
-                    <a href="#" class="button">Classes</a>
-                    <a href="#" class="button">Contact</a>
+                    <a href="#studio" class="button">Studio</a>
+                    <a href="#classes" class="button">Classes</a>
+                    <a href="#contact" class="button">Contact</a>
                     <a target="_blank" href="https://www.facebook.com/Yogatree-153466858049421/">
                         <img style="width:20px;" src="images/Facebook-logo-black.png" alt="">
                     </a>
                 </span>
             </div>
         </header>
-        <div class="col-sm-12 col-md-offset-2 col-md-7 section t-center">
+        <div class="col-sm-12 bgap-l">
+            <div class="slick-slider" style="position:relative">
+                <div class="bg center" style="background-image: url(images/explore.jpg); height:700px">
+                    <div class="info" style="background:transparent">
+                        <h2 class="slider-heading" style="background:transparent">Explore</h2>
+                        <p style="background:transparent">your infinite potential with Yogatree</p>
+                    </div>
+                </div>
+                <div class="bg center" style="background-image: url(images/transform.jpg); height:700px">
+                    <div class="info" style="background:transparent">
+                        <h2 class="slider-heading" style="background:transparent">Journey</h2>
+                        <p style="background:transparent">within to discover yourself with Yogatree</p>
+                    </div>
+                </div>
+                <div  class="bg center" style="background-image: url(images/journey.jpg); height:700px">
+                    <div class="info" style="background:transparent">
+                        <h2 style="background:transparent">Transform</h2>
+                        <p style="background:transparent">it’s a new day, everyday with Yogatree</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-offset-2 col-md-7 section t-center" id="studio">
             <h2>You'll love this space</h2>
             <p>
                 Yogatree’s yoga studio is thoughtfully designed to bring out the best in your yoga practice. The brainchild of Mayuri, who
@@ -76,7 +104,7 @@
             </p>
         </div>
        <div class="col-sm-12 bg section bg-venue" style="background-image:url(images/erfr.jpg); height:750px;"></div>
-        <div class="col-sm-12 col-md-offset-2 col-md-7 section t-center">
+        <div class="col-sm-12 col-md-offset-2 col-md-7 section t-center" id="classes">
             <h2>Meet our teachers</h2>
             <p>
                 At Yogatree, our teachers respect yoga for the positive change that it has brought to their lives. Trained in multiple styles
@@ -86,7 +114,7 @@
                 But what connects them is a deep personal experience of yoga and the missionary zeal to spread the benefits of yoga.
             </p>
         </div>
-        <div class="col-sm-12 bg bg-contain section bg-class" style="background-image:url(images/smallerbanner2.png); height:465px;"></div>
+        <div class="col-sm-12 bg bg-contain section bg-class" style="background-image:url(images/smallerbanner2.png); height:310px;"></div>
         <div class="col-sm-12 section">
             <h2 class="t-center">We are making a difference</h2>
         </div>
@@ -473,7 +501,7 @@
                 </div>
                 <div class="col-sm-12 col-md-6 t-center">
                     <div>
-                        <img src="images/vin.png" alt="">
+                        <img src="images/presentation.png" alt="">
                     </div>
                     <h4>Vinyasa Flow Yoga</h4>
                     <p>
@@ -489,7 +517,7 @@
         
         
         </div>
-        <div class="col-sm-12 section">
+        <div class="col-sm-12 section" id="contact">
             <h2 class="t-center">Get in touch with us</h2>
         </div>
        <div class="col-sm-12 bg bg-contain section bg-bldg" style="background-image:url(images/studio-address.jpg); height:465px;"></div>
