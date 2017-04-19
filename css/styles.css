@@ -69,6 +69,7 @@ a{
 .legend{
     padding: 5px;
     width: 150px;
+    margin-bottom: 5px;
 }
 .legend.light-green{
     background-color: #aad174;
