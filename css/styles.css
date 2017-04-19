@@ -215,38 +215,46 @@ h4 {
 #trainers .col-sm-12:not(:last-child){
     border-right: 2px solid #59B548;
 }
- #booking{
-    height: 700px;
-}
-@media (min-width: 768px){
-    .mobile-only{display: none;}
-     .desktop-only{
-        display: none;
+ 
+@media (min-width: 535px){
+    .bg{
+        background-size: cover;
     }
-    #logo{
-        height: 80px;
+    .bg-bldg{
+        height: 175px;
     }
-}
-@media only screen and (min-width: 981px){
-    #logo {
-        /*max-height: 88%;*/
-        width: 100px;
-    }
-    header{
-        height: auto;
-    }
-    header>div.container{
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-    .hide-desktop{
-        display: none;
-    }
-     .desktop-only{
-     display: block;   
+    #booking{
+        height: 300px;
     }
 }
 
+@media (max-width: 534px){
+    .info{
+        font-size: 1.4rem;
+    }
+     .bg-today .info{
+        padding-top: 20px;
+    }
+    .bg-bldg{
+        height: 160px;
+    }
+}
+@media (max-width: 334px){
+    .info{
+        font-size: 1.1rem;
+    }
+     .bg-today .info{
+        padding-top: 0px;
+    }
+    .info h2{
+        margin-bottom: 5px;
+    }
+}
+@media (min-width: 648px){
+    .bg-bldg{
+        height: 205px;
+    }
+}
 @media (max-width: 767px) {
     h2{
         font-size: 4em;
@@ -260,14 +268,14 @@ h4 {
     *, html {
         font-size: 14px;
     }
-    .bg{
+    /*.bg{
         background-size: contain;
-    }
+    }*/
     .bg-venue{
-        height: 255px!important;
+        height: 255px;
     }
     .bg-bldg, .bg-class{
-        height: 155px!important;        
+        height: 155px;        
     }
     div.preset{
         overflow: auto;
@@ -292,30 +300,48 @@ h4 {
         align-items: flex-start;
         margin-top: 20px;
     }
+     .bg-bldg{
+        height: 220px;
+        background-size: contain!important;
+    }
 }
-
-@media (min-width: 535px){
+@media (min-width: 768px){
+    .bg-bldg{
+        height:465px;
+    }
+    #booking{
+        height: 480px;
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .mobile-only{display: none;}
+     .desktop-only{
+        display: none;
+    }
+    #logo{
+        height: 80px;
+    }
     .bg{
-        background-size: cover;
+       background-size: cover;
     }
 }
-
-@media (max-width: 534px){
-    .info{
-        font-size: 1.4rem;
+@media only screen and (min-width: 981px){
+    #logo {
+        /*max-height: 88%;*/
+        width: 100px;
     }
-     .bg-today .info{
-        padding-top: 30px;
+    header{
+        height: auto;
     }
-}
-@media (max-width: 334px){
-    .info{
-        font-size: 1.1rem;
+    header>div.container{
+        padding-right: 30px;
+        padding-left: 30px;
     }
-     .bg-today .info{
-        padding-top: 50px;
+    .hide-desktop{
+        display: none;
     }
-    .info h2{
-        margin-bottom: 5px;
+     .desktop-only{
+     display: block;   
     }
 }
