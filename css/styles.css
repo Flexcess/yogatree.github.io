@@ -66,6 +66,20 @@ a{
     margin-bottom: 100px;
 }
 
+.legend{
+    padding: 5px;
+    width: 150px;
+}
+.legend.light-green{
+    background-color: #aad174;
+}
+.legend.green{
+    background-color: #59B548;
+    color: #d7e4d1;
+}
+.legend.yellow{
+    background-color: #F3CA18;
+}
 .bg{
     background-position: center center;
     background-size: cover; 
