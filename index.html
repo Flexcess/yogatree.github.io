@@ -1,0 +1,85 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Yogatree</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v2.1.0/dist/mini-default.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="shadow-none bordered bd-bot">
+            <div class="container input-group fluid">
+                <a href="#">
+                    <img src="images/logo.png" alt="Yogatree" id="logo">
+                </a>
+                <span class="col-sm-offset-9 input-group fluid">
+                    <a href="#" class="button">Studio</a>
+                    <a href="#" class="button">Classes</a>
+                    <a href="#" class="button">Contact</a>
+                    <a target="_blank" href="https://www.facebook.com/Yogatree-153466858049421/">
+                        <img style="width:20px;" src="images/Facebook-logo-black.png" alt="">
+                    </a>
+                </span>
+            </div>
+        </header>
+       <div class="col-sm-12 bg bg-contain section" style="background-image:url(images/studio-address.jpg); height:465px;"></div>
+       <div class="container col-md-offset-2 col-md-7">
+         <div class="row">
+            <div class="col-md-6 cleft">
+                <h3 class="sub-heading">Leave us a message</h3>
+                <!--?php                 
+                    if(isset($_GET['success']) && $_GET['success'] = "yes")
+                        { ?-->
+                <p class="contact_success_message hidden">Your form has been submitted successfully !</p>
+                <!--?php 
+                        } ?-->
+                <form method="post" name="contact" class="padding-left-0 shadow-none border-none cont for validate-form" action="send-form1.php"
+                    novalidate="novalidate">
+                    <div class="form-group f-sty">
+                        <input class="form-control input required green w-100" type="text" name="fname" id="fname" placeholder="Name*">
+                    </div>
+                    <div class="form-group f-sty">
+                        <input class="form-control input required green w-100" type="email" name="email" id="email" placeholder="Email*">
+                    </div>
+                    <div class="form-group f-sty">
+                        <textarea class="form-control text-area text-area1 green w-100" type="text" name="message" id="message" placeholder="Comments"></textarea>
+                    </div>
+                    <button id="submit" value="Send" class="shadow-none btn" name="submit" type="submit"> Submit
+                            </button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3 class="sub-heading">Or drop by our studio</h3>
+                <div class="col-sm-12">
+                    <table class="shadow-none border-none margin-none">
+                        <tbody>
+                            <tr>
+                                <td valign="top"><img src="images/map.png" style="width:32px;"></td>
+                                <td valign="top">
+                                    2nd Floor, KSM Arcade(Above Lakme), No.74, 4th<br> Cross, Panduranga Nagar, Banerghatta Road,
+                                    Bengaluru, Karnataka 560076
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/call.png" style="width:32px;"></td>
+                                <td><a style="color:inherit;" href="tel:09900220033">099002 20033</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+         </div>
+       </div>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.2362257798677!2d77.59531431435302!3d12.892526220097878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1524bf664c5b%3A0xe35f05f360999e85!2sYogatree!5e0!3m2!1sen!2sin!4v1469515761103" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <footer class="text-center">
+            <p class="green text-black">&copy; 2016 Yogatree.  All rights reserved.</p>
+        </footer>
+    </body>
+    </html>

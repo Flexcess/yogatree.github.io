@@ -1,0 +1,102 @@
+body, header, *, html{
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+footer{
+    background-color: #aad174;
+}
+
+ header>div.container a, form{
+    background: none;
+    color: #333;
+}
+
+a{
+    text-decoration: none;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.padding-left-0{
+    padding-left: 0;
+}
+
+.green{
+    background-color: #aad174;
+    color: #999;
+}
+.green.text-black{
+    color: #333;
+}
+.btn{
+    color:#aad174 !important;
+    background:#ffffff;
+    /*padding-left:2em;
+    padding-right: 0.7em; */
+    border: 2px solid #aad174;
+    font-size: 22px;
+}
+.btn:hover{
+    color: #ffffff !important;
+    background: #aad174 !important;
+}
+.btn[name="submit"]:before{
+    content: url(../images/send.png);
+}
+
+.bordered.bd-bot{
+    border-top: none!important;
+    border-left: none!important;
+    border-right: none!important;
+}
+
+.section{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.bg{
+    background-position: center center;
+    background-size: cover; 
+}
+
+.bg.bg-contain{
+    background-size: contain; 
+}
+
+table.border-none td, table.border-none th, table.border-none, .border-none{
+    border: none;
+}
+
+table.margin-none{
+    margin: 0;
+}
+
+header>div.container a:hover{
+    background: none;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, .italianno{
+    font-family: 'Italianno', cursive!important;
+}
+
+h2.sub-heading, h3.sub-heading{
+    font-size: 2.3em;
+}
+
+@media only screen and (min-width: 981px){
+    #logo {
+        /*max-height: 88%;*/
+        width: 100px;
+    }
+    header{
+        height: auto;
+    }
+    header>div.container{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
