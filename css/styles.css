@@ -6,6 +6,10 @@ body, header, *, html{
     font-family: 'Open Sans', sans-serif;
     color: #666;
 }
+header, footer{
+    height: auto;
+}
+
 footer{
     background-color: #aad174;
 }
@@ -18,7 +22,9 @@ footer{
 a{
     text-decoration: none;
 }
-
+header .row{
+    align-items: center;
+}
 #booking h2, #booking p{
     color: #ffffff;
 }
@@ -217,6 +223,9 @@ h4 {
      .desktop-only{
         display: none;
     }
+    #logo{
+        height: 80px;
+    }
 }
 @media only screen and (min-width: 981px){
     #logo {
@@ -288,5 +297,25 @@ h4 {
 @media (min-width: 535px){
     .bg{
         background-size: cover;
+    }
+}
+
+@media (max-width: 534px){
+    .info{
+        font-size: 1.4rem;
+    }
+     .bg-today .info{
+        padding-top: 30px;
+    }
+}
+@media (max-width: 334px){
+    .info{
+        font-size: 1.1rem;
+    }
+     .bg-today .info{
+        padding-top: 50px;
+    }
+    .info h2{
+        margin-bottom: 5px;
     }
 }
