@@ -1,8 +1,10 @@
+body, header{
+    background: #ffffff;
+}
+
 body, header, *, html{
-    background-color: #ffffff;
     font-family: 'Open Sans', sans-serif;
     color: #666;
-    /*font-size: 14px;*/
 }
 footer{
     background-color: #aad174;
@@ -15,6 +17,14 @@ footer{
 
 a{
     text-decoration: none;
+}
+
+#booking h2, #booking p{
+    color: #ffffff;
+}
+
+.font-light{
+    font-weight: 100;
 }
 
 .t-center{
@@ -130,13 +140,14 @@ table.preset td.green{
 }
 
 .info{
-    font-size: 1.2rem;
+    font-size: 3.5rem;
 }
 .info h2{
    color: #85b14d;
 }
 .info p{
     color: #b02840;
+    font-size: 0.6em
 }
 .center{
     display: flex!important;
@@ -169,6 +180,9 @@ h3.sub-heading{
 h4 {
     font-size: 2.5em;
 }
+.mainBanner, .slick-slider{
+    height:700px;
+}
 .trainer{
     height: 450px;
     display: flex;
@@ -194,6 +208,9 @@ h4 {
 }
 #trainers .col-sm-12:not(:last-child){
     border-right: 2px solid #59B548;
+}
+ #booking{
+    height: 700px;
 }
 @media (min-width: 768px){
     .mobile-only{display: none;}
@@ -253,5 +270,23 @@ h4 {
     #trainers .col-sm-12{
         border-right: none!important;
     }
+    #booking{
+        height: 236px;
+    }
+    .info{
+        font-size: 2rem;
+    }
+    .mainBanner, .slick-slider{
+        height:350px!important;
+    }
+    .bg.center{
+        align-items: flex-start;
+        margin-top: 20px;
+    }
 }
 
+@media (min-width: 535px){
+    .bg{
+        background-size: cover;
+    }
+}

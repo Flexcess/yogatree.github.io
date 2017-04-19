@@ -5,6 +5,11 @@ $(function(){
             dots: true,
             arrows: true,
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            adaptiveHeight: true,
+            // mobileFirst: true,
+        });
+        $(window).on('resize orientationchange', function () {
+            $('.slick-slider').slick('resize');
         });
 });
