@@ -108,7 +108,7 @@ table.preset td:nth-child(2n){
 }
 table.preset td.green{
     background: #59B548;
-    color: #E8F4E5;
+    color: #d7e4d1;
 }
 header>div.container a:hover{
     background: none;
@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, .italianno{
     color: #333;
 }
 
-h2.sub-heading, h3.sub-heading{
+h2.sub-heading{
     font-size: 2.3em;
 }
 
@@ -129,6 +129,9 @@ h2 {
 }
 h3{
     font-size: 4em;    
+}
+h3.sub-heading{
+    font-size: 3.4em;    
 }
 h4 {
     font-size: 2.5em;
