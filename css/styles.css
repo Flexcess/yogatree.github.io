@@ -214,7 +214,10 @@ table.preset td.green{
 }
 .info p{
     color: #b02840;
-    font-size: 0.6em
+    font-size: 0.6em;
+}
+.info p:first-of-type{
+    margin-top: -45px;
 }
 .center{
     display: flex!important;
@@ -358,9 +361,7 @@ h4 {
     .bg.bg-testimonial p{
         font-size: 1.1em
     }
-    .info{
-        font-size: 1.4rem;
-    }
+    
      .bg-today .info{
         padding-top: 20px;
     }
@@ -426,6 +427,7 @@ h4 {
     .bg-bldg{   
         height: 205px;
     }
+   
 }
 @media (min-width: 546px) and (max-width: 775px){
    
@@ -434,6 +436,12 @@ h4 {
     }
 }
 @media (max-width: 767px) {
+     .info p{
+        font-size: 0.8em!important;
+    }
+    .info{
+        font-size: 1.7rem!important;
+    }
      table.contact-info tr {
          border: none; 
          box-shadow: none; 
