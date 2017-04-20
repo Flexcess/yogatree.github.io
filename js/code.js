@@ -2,10 +2,10 @@
 
 $(function(){
         $('.main.slick-slider').slick({
-            autoplay: true,
+            // autoplay: true,
             autoplaySpeed: 3000,
             dots: true,
-            arrows: true,
+            // arrows: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: true,
@@ -38,5 +38,11 @@ $(function(){
             $('.hamburger').toggleClass('active');
         })
 
-       
+        $('a[href="#studio"], a[href="#classes"], a[href="#contact"]').click(function () {
+            var top = $($(this).attr('href')).position().top;
+            $('html,body').animate({ scrollTop: top }, 'fast');
+
+            return false;
+
+        });
 });
