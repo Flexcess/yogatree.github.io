@@ -2,7 +2,7 @@ body, header{
     background: #ffffff;
 }
 
-body, header, *, html{
+body, header, html{
     font-family: 'Open Sans', sans-serif;
     color: #666;
 }
@@ -76,12 +76,30 @@ header .row{
     border-left: none!important;
     border-right: none!important;
 }
-
+.bg.bg-testimonial{
+    background-size: contain; 
+}
+.bg.bg-testimonial, .bg.bg-testimonial h3{
+    color: #ffffff;
+}
+.bg.bg-testimonial .slick-dots button{
+    box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.3);
+}
+.bg.bg-testimonial button.slick-arrow{
+    box-shadow: none;
+}
+.bg.bg-testimonial .slick-slider, .bg.bg-testimonial{
+    height: 435px;
+}
 .section{
     margin-top: 100px;
     margin-bottom: 100px;
 }
-
+.align-end{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .legend{
     padding: 5px;
     width: 150px;
@@ -215,6 +233,7 @@ h4 {
 #trainers .col-sm-12:not(:last-child){
     border-right: 2px solid #59B548;
 }
+
  
 @media (min-width: 535px){
     .bg{
@@ -244,6 +263,9 @@ h4 {
     .bg-venue{
         height: 300px;
     }
+    .bg.bg-testimonial{
+        background-image: url(../images/impact_vertical2.png)!important;
+    }
 }
 @media (max-width: 334px){
     .info{
@@ -257,7 +279,7 @@ h4 {
     }
 }
 @media (min-width: 648px){
-    .bg-bldg{
+    .bg-bldg{   
         height: 205px;
     }
 }
@@ -268,13 +290,14 @@ h4 {
     }
 }
 @media (max-width: 767px) {
+    
     h2{
         font-size: 4em;
     }
      .desktop-only{
      display: none;   
     }
-    .hideonmobile{
+    .hideonmobile, .bg.bg-testimonial button.slick-arrow{
         display: none!important;
     }
     *, html {
@@ -351,6 +374,11 @@ h4 {
      .bg.center{
         align-items: flex-start;
         margin-top: 40px;
+    }
+}
+@media (max-width: 1280px){
+    .bg.bg-testimonial{
+        background-color: #85b24d;
     }
 }
 @media only screen and (min-width: 981px){
