@@ -379,6 +379,10 @@ h4 {
     /*.bg{
         background-size: contain;
     }*/
+    .slider-parent{
+      padding-left: 0;
+      padding-right: 0;
+    }
     .bg-venue{
         height: 255px;
     }
