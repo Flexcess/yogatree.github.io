@@ -229,6 +229,11 @@ h4 {
   overflow: hidden;
 }
 
+#myTopnav{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .topnav .drawer{
     flex-direction: column;
     flex: 1;
