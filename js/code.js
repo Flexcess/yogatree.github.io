@@ -5,7 +5,7 @@ $(function(){
             // autoplay: true,
             autoplaySpeed: 3000,
             dots: true,
-            // arrows: true,
+            arrows: false,
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: true,
