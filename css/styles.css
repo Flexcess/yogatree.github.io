@@ -30,6 +30,7 @@ footer{
     background: none;
     color: #333;
     /*margin-right: 30px*/
+    margin-right: 15px;
 }
 
 a{
@@ -225,6 +226,9 @@ h4 {
 .mainBanner, .slick-slider{
     height:700px;
 }
+ table.contact-info td img{
+        width:32px
+}
 /* Top bar*/
 .topnav {
   overflow: hidden;
@@ -359,6 +363,17 @@ h4 {
     }
 }
 @media (max-width: 767px) {
+     table.contact-info tr {
+         border: none; 
+         box-shadow: none; 
+    }
+    table.contact-info td{
+         text-align: left;
+         padding-bottom: 0
+    }
+     table.contact-info td img{
+         width:20px
+    }
      .bg-bldg{
         height:465px;
     }
@@ -493,6 +508,9 @@ h4 {
     }
 }
 @media only screen and (min-width: 981px){
+     .mainBanner, .main.slick-slider{
+        background-size: cover!important;
+    }
      .bg-bldg{
          background-size: contain!important;
         height:465px;
