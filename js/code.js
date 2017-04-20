@@ -1,6 +1,7 @@
 
 
 $(function(){
+        $('#sidemenu').hide();
         $('.main.slick-slider').slick({
             autoplay: true,
             autoplaySpeed: 3000,
@@ -11,10 +12,10 @@ $(function(){
             adaptiveHeight: true,
         });
         $('.testimonial-parent.slick-slider').slick({
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 7000,
             dots: true,
-            arrows: true,
+            arrows: false,
             slidesToShow: 1,
             slidesToScroll: 1,
             adaptiveHeight: true,
@@ -23,18 +24,20 @@ $(function(){
             $('.slick-slider').slick('resize');
         });
         $(document).click(function (event) {
-            if (!$(event.target).closest('#sidemenu').length && !($(event.target).is('.hamburger'))) {
+            if (!$(event.target).closest('#sidemenu').length && !($(event.target).is('.hamburger'))) 
                 if ($('#sidemenu').is(":visible")) {
                     $('.hamburger').removeClass('active');
-                    $('#sidemenu').animate({ right: "-1000px" }, 500)  
+                    // $('#sidemenu').animate({ top: "-1000px" }, 500)  
+                    $('#sidemenu').slideUp();  
                 }
-            }
         })
         $('.hamburger').click(function () {
             if($(this).hasClass('active'))
-                $('#sidemenu').animate({ right: "-1000px" }, 500)   
+                // $('#sidemenu').animate({ top: "-1000px" }, 500)   
+                $('#sidemenu').slideUp();  
             else
-                $('#sidemenu').animate({ right: "0" }, 500)
+                $('#sidemenu').slideDown();  
+                // $('#sidemenu').animate({ top: "140px" }, 500)
             $('.hamburger').toggleClass('active');
         })
 
