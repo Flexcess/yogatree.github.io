@@ -320,6 +320,10 @@ h4 {
     .bg.bg-testimonial{
         background-image: url(../images/impact_vertical2.png)!important;
     }
+    .mainBanner, .slick-slider{
+        height:350px!important;
+        background-size: contain;
+    }
 }
 @media (max-width: 334px){
     .info{
@@ -407,7 +411,6 @@ h4 {
     }
     .mainBanner, .slick-slider{
         height:350px!important;
-        background-size: contain;
     }
     .bg.center{
         align-items: flex-start;
