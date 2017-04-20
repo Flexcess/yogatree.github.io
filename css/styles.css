@@ -1,11 +1,14 @@
-body, header{
+body{
     background: #ffffff;
     overflow-x: hidden;
+}
+header{
+    background: rgba(255, 255, 255, 0.95);
 }
 
 body, header, html{
     font-family: 'Open Sans', sans-serif;
-    color: #666;
+    color: #676868;
 }
 header, footer{
     height: auto;
@@ -28,7 +31,7 @@ footer{
 
  header>div.container a, form{
     background: none;
-    color: #333;
+    color: #676868;
     /*margin-right: 30px*/
     margin-right: 15px;
 }
@@ -72,7 +75,7 @@ header .row{
     color: #999;
 }
 .green.text-black{
-    color: #333;
+    color: #676868;
 }
 .btn{
     color:#aad174 !important;
@@ -199,12 +202,12 @@ table.preset td.green{
 }
 header>div.container a:hover{
     background: none;
-    color: #333;
+    color: #676868;
 }
 
 h1, h2, h3, h4, h5, .italianno{
     font-family: 'Italianno', cursive!important;
-    color: #333;
+    color: #676868;
 }
 
 h2.sub-heading{
@@ -283,7 +286,7 @@ h4 {
     color: #b9cd33
 }
 .trainer:not(:last-child){
-    border-bottom: 2px solid #59B548;
+    border-bottom: 2px solid #b9cd33;
 }
 .trainer>p{
  flex: 1;
@@ -298,7 +301,7 @@ h4 {
     padding-right: 0;
 }
 #trainers .col-sm-12:not(:last-child){
-    border-right: 2px solid #59B548;
+    border-right: 2px solid #b9cd33;
 }
 .mainBanner .info{
     text-align: center;
@@ -337,7 +340,7 @@ h4 {
     }
     .mainBanner, .slick-slider{
         height:350px!important;
-        background-size: contain;
+        background-size: cover;
     }
 }
 @media (max-width: 334px){
@@ -424,7 +427,7 @@ h4 {
         max-width: 100%;
     }
     .trainer{
-        border-bottom: 2px solid #59B548;
+        border-bottom: 2px solid #b9cd33;
     }
     #trainers .col-sm-12{
         border-right: none!important;
