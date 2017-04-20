@@ -184,7 +184,16 @@ table.preset td.green{
     background: #59B548;
     color: #d7e4d1;
 }
-
+.slick-prev{
+    left: 50px;
+    z-index: 999;
+    box-shadow: none;
+}
+.slick-next{
+    right: 500px;
+    z-index: 999;
+    box-shadow: none;
+}
 .info{
     font-size: 3.5rem;
 }
@@ -199,6 +208,12 @@ table.preset td.green{
     display: flex!important;
     justify-content: center;
     align-items: center;
+}
+.relative{
+    position: relative;
+}
+.bg-testimonial.center{
+     flex-direction: column;
 }
 header>div.container a:hover{
     background: none;
@@ -226,9 +241,9 @@ h3.sub-heading{
 h4 {
     font-size: 2.5em;
 }
-.mainBanner, .slick-slider{
+/*.mainBanner, .slick-slider{
     height:700px;
-}
+}*/
  table.contact-info td img{
         width:32px
 }
@@ -339,7 +354,7 @@ h4 {
         background-image: url(../images/impact_vertical2.png)!important;
     }
     .mainBanner, .slick-slider{
-        height:350px!important;
+        height:450px!important;
         background-size: cover;
     }
 }
@@ -439,7 +454,7 @@ h4 {
         font-size: 1.2rem;
     }
     .mainBanner, .slick-slider{
-        height:350px!important;
+        height:460px!important;
     }
     .bg.center{
         align-items: flex-start;

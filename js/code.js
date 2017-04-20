@@ -10,8 +10,8 @@ $(function(){
             slidesToScroll: 1,
             adaptiveHeight: true,
         });
-        $('.bg-testimonial .slick-slider').slick({
-            autoplay: true,
+        $('.testimonial-parent.slick-slider').slick({
+            // autoplay: true,
             autoplaySpeed: 7000,
             dots: true,
             arrows: true,
