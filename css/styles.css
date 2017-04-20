@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 body{
     background: #ffffff;
     overflow-x: hidden;
@@ -9,6 +10,9 @@ header{
 body, header, html{
     font-family: 'Open Sans', sans-serif;
     color: #676868;
+}
+button{
+    box-shadow: 0 1px 5px rgba(0,0,0,.18), 0 1px 5px rgba(0,0,0,.18)!important;
 }
 header, footer{
     height: auto;
@@ -112,7 +116,14 @@ header .row{
     box-shadow: none;
 }
 .bg.bg-testimonial .slick-slider, .bg.bg-testimonial{
-    height: 435px;
+    height: 490px;
+}
+.bg.bg-testimonial p{
+    font-family: 'Open Sans Condensed', sans-serif !important;    
+    font-size: 1.2em
+}
+.bg.bg-testimonial p:last-child{
+    margin-top: 10px;
 }
 .section{
     margin-top: 100px;
@@ -344,6 +355,9 @@ h4 {
 }
 
 @media (max-width: 534px){
+    .bg.bg-testimonial p{
+        font-size: 1.1em
+    }
     .info{
         font-size: 1.4rem;
     }
@@ -356,11 +370,41 @@ h4 {
     .bg-venue{
         height: 300px;
     }
-    .bg.bg-testimonial{
-        background-image: url(../images/impact_vertical2.png)!important;
+    .t1{
+        background-image: url(../images/mob_1.jpg)!important;
     }
-    .bg.bg-testimonial:eq(1){
+    .t2{
         background-image: url(../images/mob_2.jpg)!important;
+    }
+    .t3{
+        background-image: url(../images/mob_3.jpg)!important;
+    }
+    .t4{
+        background-image: url(../images/mob_4.jpg)!important;
+    }
+    .t5{
+        background-image: url(../images/mob_5.jpg)!important;
+    }
+    .t6{
+        background-image: url(../images/mob_6.jpg)!important;
+    }
+    .t7{
+        background-image: url(../images/mob_7.jpg)!important;
+    }
+    .t8{
+        background-image: url(../images/mob_8.jpg)!important;
+    }
+     .t9{
+        background-image: url(../images/mob_9.jpg)!important;
+    }
+    .t10{
+        background-image: url(../images/mob_10.jpg)!important;
+    }
+    .t11{
+        background-image: url(../images/mob_11.jpg)!important;
+    }
+    .bg.bg-testimonial .slick-slider, .bg.bg-testimonial{
+        height: 435px;
     }
     .mainBanner, .slick-slider{
         height:450px!important;
@@ -469,6 +513,11 @@ h4 {
         align-items: flex-start;
         margin-top: 20px;
     }
+    .bg.bg-testimonial{
+        align-items: center;
+        margin-top: 0;
+        padding-top: 15px;
+    }
      .bg-bldg{
         height: 220px;
         background-size: contain!important;
@@ -479,6 +528,9 @@ h4 {
 }
 
 @media (min-width: 768px){
+    .t4{
+        background-size: cover!important
+    }
      .bg-bldg {
         background-size: cover!important;
         height: 235px;
@@ -535,6 +587,10 @@ h4 {
     }
 }
 @media only screen and (min-width: 981px){
+    .info p{
+        color: #b02840;
+        font-size: 0.8em
+    }
      .mainBanner, .main.slick-slider{
         background-size: cover!important;
     }
