@@ -312,6 +312,9 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
 }
+table.contact-info td{
+    background: #ffffff; 
+}
 .trainer{
     height: 450px;
     display: flex;
@@ -448,7 +451,7 @@ h4 {
     }
     table.contact-info td{
          text-align: left;
-         padding-bottom: 0
+         padding-bottom: 0;
     }
      table.contact-info td img{
          width:20px
