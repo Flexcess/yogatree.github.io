@@ -315,6 +315,9 @@ h4 {
 table.contact-info td{
     background: #ffffff; 
 }
+table.contact-info td:first-child{
+    width: 25px;
+}
 .trainer{
     height: 450px;
     display: flex;
