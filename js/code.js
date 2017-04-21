@@ -3,7 +3,7 @@
 $(function(){
         $('#sidemenu').hide();
         $('.main.slick-slider').slick({
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 3000,
             dots: true,
             arrows: false,
@@ -12,7 +12,7 @@ $(function(){
             adaptiveHeight: true,
         });
         $('.testimonial-parent.slick-slider').slick({
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 7000,
             dots: true,
             arrows: false,
