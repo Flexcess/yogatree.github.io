@@ -38,9 +38,7 @@ footer{
 }
 
  header>div.container a, form, #holder>div >*{
-    /*background: none;*/
     color: #676868;
-    /*margin-right: 30px*/
     background: rgba(255, 255, 255, 0.95);
     margin-right: 15px;
 }
@@ -89,8 +87,6 @@ header .row{
 .btn{
     color:#aad174 !important;
     background:#ffffff;
-    /*padding-left:2em;
-    padding-right: 0.7em; */
     border: 2px solid #aad174;
     font-size: 22px;
 }
@@ -322,7 +318,7 @@ h4 {
     font-size: 1.2em;
 }
 
-.trainer>p:last-child{
+.trainer>p:last-of-type{
     flex: 1;
     justify-content: center;
     align-items: flex-end;
@@ -426,11 +422,11 @@ table.contact-info td:first-child{
     .bg-today .info{
         padding-top: 40px;
     }
+    .mob-tgap-l:not(:first-child){
+        margin-top: 40px;
+    }
 }
 @media (min-width: 546px) and (max-width: 775px){
-   .mainBanner{
-        /*height:250px!important;*/
-    }
     .bg-venue{
         background-size: cover!important;
     }
@@ -752,4 +748,30 @@ table.contact-info td:first-child{
     .bg.bg-today {
            height: 570px!important;
     }
+}
+/* Hover effect */
+.trainer:hover > h2, .trainer:hover > p:not(.text){
+    opacity:0.6;
+}
+.trainer{
+    position: relative;
+}
+.trainer .text {
+     color: #b02840 ;
+    opacity:0;
+    transition:all 0.5s linear;
+    position:absolute;
+    top:30%;
+    left:0px;
+    visibility:hidden;
+    background: rgba(209, 209, 209, 0.29);
+    height:250px;
+    overflow: auto;
+    padding: 5px;
+    width: 95%;
+}
+
+.trainer:hover .text {
+    opacity:1;
+    visibility:visible;
 }
