@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');*/
 body{
     background: #ffffff;
     overflow-x: hidden;
@@ -10,6 +11,9 @@ header{
 body, header, html{
     font-family: 'Open Sans', sans-serif;
     color: #676868;
+}
+.slick-slide {
+    outline: none;
 }
 button{
     box-shadow: 0 1px 5px rgba(0,0,0,.18), 0 1px 5px rgba(0,0,0,.18)!important;
@@ -115,14 +119,18 @@ header .row{
 .bg.bg-testimonial button.slick-arrow{
     box-shadow: none;
 }
-.bg.bg-testimonial .slick-slider, .bg.bg-testimonial{
+.bg.bg-testimonial{
     height: 490px;
 }
 .bg.bg-testimonial p{
-    font-family: 'Open Sans Condensed', sans-serif !important;    
-    font-size: 1.2em
+    font-size: 1.2em;
+    line-height: 1.3!important;
 }
+/*.bg.bg-testimonial p:first-child{
+    font-weight: 600;
+}*/
 .bg.bg-testimonial p:last-child{
+    font-family: 'Open Sans Condensed', sans-serif !important;    
     margin-top: 10px;
 }
 .section{
@@ -238,6 +246,7 @@ header>div.container a:hover{
 h1, h2, h3, h4, h5, .italianno{
     font-family: 'Italianno', cursive!important;
     color: #676868;
+    line-height: 1;
 }
 
 h2.sub-heading{
@@ -256,9 +265,9 @@ h3.sub-heading{
 h4 {
     font-size: 2.5em;
 }
-/*.mainBanner, .slick-slider{
-    height:700px;
-}*/
+.mainBanner{
+    height:950px;
+}
  table.contact-info td img{
         width:32px
 }
@@ -312,6 +321,13 @@ h4 {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
 }
+
+.trainer>p:last-child{
+    flex: 1;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+}
 table.contact-info td{
     background: #ffffff; 
 }
@@ -330,7 +346,6 @@ table.contact-info td:first-child{
     border-bottom: 2px solid #b9cd33;
 }
 .trainer>p{
- flex: 1;
  color: #b02840 !important;
 }
 .trainer img{
@@ -364,19 +379,67 @@ table.contact-info td:first-child{
 }
 
 @media (max-width: 534px){
+    .mainBanner .info {
+        margin-top: 30px;
+    }
+    .mainBanner.bg {
+        height: 330px!important;
+         background-size: contain;
+    }
     .bg.bg-testimonial p{
-        font-size: 1.1em
+        font-size: 1.1em;
+        line-height: 1.3!important;
     }
     
-     .bg-today .info{
-        padding-top: 20px;
-    }
     .bg-bldg{
         height: 160px;
     }
     .bg-venue{
         height: 300px;
     }
+    .bg.bg-testimonial{
+        height: 824px;
+    }
+    .mainBanner{
+        height:450px!important;
+        background-size: cover;
+    }
+}
+@media (max-width: 334px){
+    .info{
+        font-size: 1.1rem;
+    }
+     .bg-today .info{
+        padding-top: 0px;
+    }
+    .info h2{
+        margin-bottom: 5px;
+    }
+}
+@media (min-width: 648px){
+    .bg-bldg{   
+        height: 205px;
+    }
+   
+}
+@media  (max-width: 775px){
+    .bg-today .info{
+        padding-top: 40px;
+    }
+}
+@media (min-width: 546px) and (max-width: 775px){
+   .mainBanner{
+        /*height:250px!important;*/
+    }
+    .bg-venue{
+        background-size: cover!important;
+    }
+}
+@media (max-width: 767px) {
+    /*.bg.bg-testimonial p:not(:last-child){
+        font-weight: 600;
+        background: rgba(133, 178, 77, 0.52)!important;
+    }*/
     .t1{
         background-image: url(../images/mob_1.jpg)!important;
     }
@@ -410,38 +473,12 @@ table.contact-info td:first-child{
     .t11{
         background-image: url(../images/mob_11.jpg)!important;
     }
-    .bg.bg-testimonial .slick-slider, .bg.bg-testimonial{
-        height: 435px;
+    .bg.bg-testimonial {
+         background-size: contain;
     }
-    .mainBanner, .slick-slider{
-        height:450px!important;
-        background-size: cover;
+    .info p:first-of-type{
+        margin-top: -25px;
     }
-}
-@media (max-width: 334px){
-    .info{
-        font-size: 1.1rem;
-    }
-     .bg-today .info{
-        padding-top: 0px;
-    }
-    .info h2{
-        margin-bottom: 5px;
-    }
-}
-@media (min-width: 648px){
-    .bg-bldg{   
-        height: 205px;
-    }
-   
-}
-@media (min-width: 546px) and (max-width: 775px){
-   
-    .bg-venue{
-        background-size: cover!important;
-    }
-}
-@media (max-width: 767px) {
      .info p{
         font-size: 0.8em!important;
     }
@@ -467,7 +504,7 @@ table.contact-info td:first-child{
         background-size: cover;
     }
     .trainer {
-        height: 400px;
+        height: 355px;
         display: flex;
         flex-direction: column;
     }
@@ -481,6 +518,7 @@ table.contact-info td:first-child{
     }
     h2{
         font-size: 4em;
+        margin-bottom: 0;
     }
      .desktop-only{
      display: none;   
@@ -515,12 +553,12 @@ table.contact-info td:first-child{
         border-right: none!important;
     }
     #booking{
-        height: 236px;
+        height: 300px;
     }
     .info{
         font-size: 1.2rem;
     }
-    .mainBanner, .slick-slider{
+    .mainBanner{
         height:460px!important;
     }
     .bg.center{
@@ -557,7 +595,7 @@ table.contact-info td:first-child{
         height: 550px;
         padding-top: 60px;
         margin-bottom: 10px;
-        background-size: contain;
+        /*background-size: contain;*/
     }
     
     .mobile-only{display: none;}
@@ -581,8 +619,8 @@ table.contact-info td:first-child{
         align-items: flex-start;
         margin-top: 40px;
     }
-    .mainBanner, .main.slick-slider{
-        background-size: contain!important;
+    .mainBanner{
+        /*background-size: contain!important;*/
     }
 }
 @media (min-width: 846px){
@@ -647,8 +685,71 @@ table.contact-info td:first-child{
         background-size: cover;
     }
 }
-@media (max-width: 699px){
-    .mainBanner, .main.slick-slider{
-        height:250px!important;
+@media (max-width:565px){
+    .mainBanner{
+        height:270px!important;
+    }
+}
+@media(min-width: 1267px){
+    .mainBanner {
+        height: 850px;
+    }
+    .bg.bg-testimonial {
+        height: 450px;
+         background-size: cover;
+    }
+}
+@media(min-width: 1095px) and (max-width:1272px){
+    .mainBanner {
+        height: 750px;
+    }
+}
+@media(min-width: 760px) and (max-width:1094px){
+    .mainBanner {
+        height: 550px;
+    }
+    .bg.bg-testimonial {
+        height: 600px;
+    }
+    #booking {
+        height: 480px;
+    }
+}
+@media (min-width: 552px) and (max-width:691px){
+    .mainBanner {
+        height:380px!important;
+    }
+}
+@media(min-width: 1425px){
+    .bg.bg-testimonial {
+        height: 440px;
+         background-size: cover;
+    }
+}
+
+@media (min-width:240px) and (max-width: 1190px){
+    .bg.bg-today {
+        background-size: contain!important;
+    }
+}
+@media (min-width:688px) and (max-width: 764px){
+    .bg.bg-today {
+        background-size: cover!important;
+        height: 330px!important;
+    }
+}
+@media (min-width:1272px) and (max-width: 764px){
+    .bg.bg-today {
+           height: 555px!important;
+    }
+}
+@media (min-width:1202px) and (max-width: 1296px){
+    .bg.bg-today {
+           height: 480px!important;
+    }
+}
+@media (min-width:1202px) and (max-width: 1600px){
+    .bg.bg-today {
+           height: 570px!important;
     }
 }
