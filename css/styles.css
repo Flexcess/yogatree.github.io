@@ -425,7 +425,7 @@ table.contact-info td:first-child{
     .bg-today .info{
         padding-top: 40px;
     }
-    .mob-tgap-l:not(:first-child){
+    .mob-tgap-l{
         margin-top: 40px;
     }
 }
@@ -750,6 +750,11 @@ table.contact-info td:first-child{
 @media (min-width:1202px) and (max-width: 1600px){
     .bg.bg-today {
            height: 570px!important;
+    }
+}
+@media (max-width: 460px){
+    .bg-today .info {
+           padding-top: 60px;
     }
 }
 /* Hover effect */
