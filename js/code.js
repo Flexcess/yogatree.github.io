@@ -30,6 +30,10 @@ $(function(){
                     // $('#sidemenu').animate({ top: "-1000px" }, 500)  
                     $('#sidemenu').slideUp();  
                 }
+            if (!$(event.target).closest('.trainer').length && !($(event.target).is('.trainer')))
+                if ($('.trainer.active').find('.text').is(":visible")) {
+                    $('.trainer.active').removeClass('active');
+                }
         })
         $('.hamburger').click(function () {
             if($(this).hasClass('active'))
@@ -46,6 +50,9 @@ $(function(){
             $('html,body').animate({ scrollTop: top }, 'fast');
 
             return false;
-
         });
+        $('.trainer').click(function(){
+            $('.trainer.active').removeClass('active');
+            $(this).toggleClass('active');
+        })
 });

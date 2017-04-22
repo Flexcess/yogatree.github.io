@@ -753,11 +753,12 @@ table.contact-info td:first-child{
     }
 }
 /* Hover effect */
-.trainer:hover > h2, .trainer:hover > p:not(.text){
+.trainer.active > h2, .trainer.active > p:not(.text){
     opacity:0.6;
 }
 .trainer{
     position: relative;
+    cursor: pointer;
 }
 .trainer .text {
      color: #b02840 ;
@@ -774,7 +775,7 @@ table.contact-info td:first-child{
     width: 95%;
 }
 
-.trainer:hover .text {
+.trainer.active .text {
     opacity:1;
     visibility:visible;
 }
