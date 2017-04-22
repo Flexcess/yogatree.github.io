@@ -708,7 +708,7 @@ table.contact-info td:first-child{
         height: 550px;
     }
     .bg.bg-testimonial {
-        height: 600px;
+        height: 680px;
     }
     #booking {
         height: 480px;
@@ -721,7 +721,7 @@ table.contact-info td:first-child{
 }
 @media(min-width: 1425px){
     .bg.bg-testimonial {
-        height: 440px;
+        height: 390px;
          background-size: cover;
     }
 }
@@ -783,4 +783,22 @@ table.contact-info td:first-child{
 .trainer.active .text {
     opacity:1;
     visibility:visible;
+}
+@media (min-width: 1604px){
+    .bg-bldg, .bg.bg-class{
+        background-size: cover!important;
+    }
+    .bg.bg-bldg{
+        height: 495px;
+    }
+    .bg.bg-class {
+        height: 350px;
+    }
+}
+@media (min-width:1264px) and (max-width: 1769px){
+    .bg.bg-testimonial {
+        height: 500px;
+        background-size: contain!important;
+        background-color: #85b24d;
+    }
 }
