@@ -109,7 +109,7 @@ header .row{
     border-left: none!important;
     border-right: none!important;
 }
-.testimonial .row[class*=cols-sm-]>*:last-child, .testimonial [class^=col-sm-]:last-child,.bg-testimonial [class^=col-sm-offset-]:last-child{
+.testimonial .row[class*=col-sm-]>*:last-child, .testimonial [class^=col-sm-]:last-child,.bg-testimonial [class^=col-sm-offset-]:last-child{
     padding-right: 0;
       display: flex;
     justify-content: flex-end;
@@ -390,8 +390,11 @@ table.contact-info td:first-child{
         font-size: 1.1em;
         line-height: 1.3!important;
     }
-    .bg.bg-testimonial p:not:last-child{
+    .bg.bg-testimonial p:not(last-child){
         font-size: 1em;
+    }
+    .bg.bg-testimonial p:last-child{
+        margin-top: 5px;
     }
     .bg.bg-testimonial p:first-of-type{
         /*background: rgba(135, 176, 82, 0.38);*/
@@ -706,18 +709,24 @@ table.contact-info td:first-child{
         height: 850px;
     }
     .bg.bg-testimonial {
-        height: 479px;
+        height: 410px;
          /*background-size: cover!important;*/
     }
     .testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row{
-        height: 479px;
+        height: 410px;
     }
-    .testimonial .row[class*=cols-sm-]>*:last-child, .testimonial [class^=col-sm-]:last-child{
+    .testimonial .row[class*=col-sm-]>*:last-child, .testimonial [class^=col-sm-]:last-child{
         display: flex;
         justify-content: flex-end;
     }
+    .testimonial .row [class*=col-sm-]:not(:last-child) *{
+        padding-left: 90px;
+    }
 }
 @media(min-width: 1095px) and (max-width:1272px){
+    .testimonial .row [class*=col-sm-]:not(:last-child) *{
+        padding-left: 40px;
+    }
     .mainBanner {
         height: 750px;
     }
@@ -727,10 +736,13 @@ table.contact-info td:first-child{
         height: 550px;
     }
     .bg.bg-testimonial, .testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row {
-        height: 480px;
+        height: 384px;
     }
     #booking {
         height: 480px;
+    }
+    .bg.bg-testimonial p:not(last-child){
+        font-size: 0.8em;
     }
 }
 @media (min-width: 552px) and (max-width:691px){
