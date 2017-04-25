@@ -39,7 +39,7 @@ footer{
 
  header>div.container a, form, #holder>div >*{
     color: #676868;
-    background: rgba(255, 255, 255, 0.95);
+    background: none!important;
     margin-right: 15px;
 }
 
@@ -64,6 +64,9 @@ header .row{
 
 .t-center{
     text-align: center;
+}
+.t-left{
+    text-align: left;
 }
 
 .w-100{
@@ -113,7 +116,7 @@ header .row{
     vertical-align: bottom;
 }
 .bg.bg-testimonial{
-    background-size: contain; 
+    background-size: contain!important; 
 }
 .bg.bg-testimonial, .bg.bg-testimonial h3{
     color: #ffffff;
@@ -129,6 +132,7 @@ header .row{
 }
 #yogaImg{
     height: 478px;
+    margin: 0 auto;
 }
 .bg.bg-testimonial p{
    
@@ -401,8 +405,11 @@ table.contact-info td:first-child{
         font-size: 1.1em;
         line-height: 1.3!important;
     }
+    .bg.bg-testimonial p:not:last-child{
+        font-size: 1em;
+    }
     .bg.bg-testimonial p:first-of-type{
-        background: rgba(135, 176, 82, 0.38);
+        /*background: rgba(135, 176, 82, 0.38);*/
     }
     
     .bg-bldg{
@@ -412,7 +419,7 @@ table.contact-info td:first-child{
         height: 300px;
     }
     .bg.bg-testimonial, .testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row{
-        height: 600px;
+        height: 815px;
     }
     .mainBanner{
         height:450px!important;
@@ -454,41 +461,49 @@ table.contact-info td:first-child{
         font-weight: 600;
         background: rgba(133, 178, 77, 0.52)!important;
     }*/
+    .bg.bg-testimonial .row{
+        display: flex;
+        align-items: flex-end;
+    }
+    #yogaImg{
+        height: 340px;
+    }
     .t1{
-        background-image: url(../images/mob_1.jpg)!important;
+        background-image: url(../images/mobt1.png)!important;
     }
     .t2{
-        background-image: url(../images/mob_2.jpg)!important;
+        background-image: url(../images/mobt2.png)!important;
     }
     .t3{
-        background-image: url(../images/mob_3.jpg)!important;
+        background-image: url(../images/mob_t3a.png)!important;
     }
     .t4{
-        background-image: url(../images/mob_4.jpg)!important;
+        background-image: url(../images/mob_t4b.jpg)!important;
     }
     .t5{
-        background-image: url(../images/mob_5.jpg)!important;
+        background-image: url(../images/mob_t5.png)!important;
     }
     .t6{
-        background-image: url(../images/mob_6.jpg)!important;
+        background-image: url(../images/mob_t6a.png)!important;
     }
     .t7{
-        background-image: url(../images/mob_7.jpg)!important;
+        background-image: url(../images/mob_t7a.jpg)!important;
     }
     .t8{
-        background-image: url(../images/mob_8.jpg)!important;
+        background-image: url(../images/mob_t8.png)!important;
     }
      .t9{
-        background-image: url(../images/mob_9.jpg)!important;
+        background-image: url(../images/mob_t9.png)!important;
     }
     .t10{
-        background-image: url(../images/mob_10.jpg)!important;
+        background-image: url(../images/mob_t10.png)!important;
     }
     .t11{
-        background-image: url(../images/mob_11.jpg)!important;
+        background-image: url(../images/mob_t11a.jpg)!important;
     }
     .bg.bg-testimonial {
-         background-size: contain;
+         background-size: contain!important;
+         background-position: top!important;
     }
     .info p:first-of-type{
         margin-top: -25px;
@@ -710,7 +725,7 @@ table.contact-info td:first-child{
     }
     .bg.bg-testimonial {
         height: 450px;
-         background-size: cover;
+         background-size: cover!important;
     }
     .testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row{
         height: 450px;
@@ -729,7 +744,7 @@ table.contact-info td:first-child{
         height: 550px;
     }
     .bg.bg-testimonial, .testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row {
-        height: 680px;
+        height: 480px;
     }
     #booking {
         height: 480px;
