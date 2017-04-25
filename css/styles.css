@@ -103,6 +103,12 @@ header .row{
     border-left: none!important;
     border-right: none!important;
 }
+.bg-testimonial .row[class*=cols-sm-]>*:last-child, .bg-testimonial [class^=col-sm-]:last-child,.bg-testimonial [class^=col-sm-offset-]:last-child{
+    padding-right: 0;
+}
+.testimonial img{
+    vertical-align: bottom;
+}
 .bg.bg-testimonial{
     background-size: contain; 
 }
@@ -118,15 +124,18 @@ header .row{
 .bg.bg-testimonial{
     height: 490px;
 }
+#yogaImg{
+    height: 478px;
+}
 .bg.bg-testimonial p{
-    font-size: 1.2em;
+   
     line-height: 1.3!important;
 }
-/*.bg.bg-testimonial p:first-child{
-    font-weight: 600;
-}*/
+.bg.bg-testimonial p:first-child{
+     font-size: 1.1em;
+}
 .bg.bg-testimonial p:last-child{
-    font-family: 'Open Sans Condensed', sans-serif !important;    
+    /*font-family: 'Open Sans Condensed', sans-serif !important;    */
     margin-top: 10px;
 }
 .section{
@@ -227,6 +236,9 @@ table.preset td.green{
     display: flex!important;
     justify-content: center;
     align-items: center;
+}
+.flex-col{
+    flex-direction: column;
 }
 .relative{
     position: relative;
@@ -697,6 +709,9 @@ table.contact-info td:first-child{
         height: 450px;
          background-size: cover;
     }
+    #yogaImg{
+        height: 440px;
+    }
 }
 @media(min-width: 1095px) and (max-width:1272px){
     .mainBanner {
@@ -723,6 +738,9 @@ table.contact-info td:first-child{
     .bg.bg-testimonial {
         height: 390px;
          background-size: cover;
+    }
+    #yogaImg{
+        height: 380px;
     }
 }
 
@@ -758,22 +776,22 @@ table.contact-info td:first-child{
     }
 }
 /* Hover effect */
-.trainer.active > h2, .trainer.active > p:not(.text){
+/*.trainer.active > h2, .trainer.active > p:not(.text){
     opacity:0.6;
-}
+}*/
 .trainer{
     position: relative;
     cursor: pointer;
 }
 .trainer .text {
-     color: #b02840 ;
+     /*color: #b02840 ;*/
     opacity:0;
     transition:all 0.5s linear;
     position:absolute;
     top:30%;
     left:0px;
     visibility:hidden;
-    background: rgba(209, 209, 209, 0.29);
+    /*background: rgba(209, 209, 209, 0.29);*/
     height:250px;
     overflow: auto;
     padding: 5px;
@@ -797,8 +815,11 @@ table.contact-info td:first-child{
 }
 @media (min-width:1264px) and (max-width: 1769px){
     .bg.bg-testimonial {
-        height: 500px;
+        height: 478px;
         background-size: contain!important;
         background-color: #85b24d;
+    }
+    #yogaImg{
+        height: 465px;
     }
 }
