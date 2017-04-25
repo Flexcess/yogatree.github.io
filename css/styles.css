@@ -84,6 +84,9 @@ header .row{
 .green.text-black{
     color: #676868;
 }
+.green.text-white{
+    color: #ffffff;
+}
 .btn{
     color:#aad174 !important;
     background:#ffffff;
