@@ -121,7 +121,7 @@ header .row{
 .bg.bg-testimonial button.slick-arrow{
     box-shadow: none;
 }
-.bg.bg-testimonial{
+.bg.bg-testimonial, .testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row{
     height: 490px;
 }
 #yogaImg{
@@ -408,7 +408,7 @@ table.contact-info td:first-child{
     .bg-venue{
         height: 300px;
     }
-    .bg.bg-testimonial{
+    .bg.bg-testimonial, .testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row{
         height: 600px;
     }
     .mainBanner{
@@ -709,6 +709,9 @@ table.contact-info td:first-child{
         height: 450px;
          background-size: cover;
     }
+    .testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row{
+        height: 450px;
+    }
     #yogaImg{
         height: 440px;
     }
@@ -722,7 +725,7 @@ table.contact-info td:first-child{
     .mainBanner {
         height: 550px;
     }
-    .bg.bg-testimonial {
+    .bg.bg-testimonial, .testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row {
         height: 680px;
     }
     #booking {
@@ -734,15 +737,15 @@ table.contact-info td:first-child{
         height:380px!important;
     }
 }
-@media(min-width: 1425px){
-    .bg.bg-testimonial {
+/*@media(min-width: 1425px){
+    .bg.bg-testimonial,  .testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row {
         height: 390px;
          background-size: cover;
     }
     #yogaImg{
         height: 380px;
     }
-}
+}*/
 
 @media (min-width:240px) and (max-width: 1190px){
     .bg.bg-today {
@@ -813,13 +816,30 @@ table.contact-info td:first-child{
         height: 350px;
     }
 }
-@media (min-width:1264px) and (max-width: 1769px){
+@media (min-width:1600px) and (max-width: 1769px){
     .bg.bg-testimonial {
         height: 478px;
         background-size: contain!important;
         background-color: #85b24d;
     }
+    .testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row{
+        height: 478px;
+    }
     #yogaImg{
         height: 465px;
     }
 }
+
+/*@media (min-width:1280px) and (max-width: 1585px){
+    .bg.bg-testimonial {
+        height: 387px;
+        background-size: contain!important;
+        background-color: #85b24d;
+    }
+    .testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row{
+        height: 387px;
+    }
+    #yogaImg{
+        height: 465px;
+    }
+}*/
