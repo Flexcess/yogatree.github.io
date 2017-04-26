@@ -250,7 +250,7 @@ table.preset td.green{
     font-size: 0.6em;
 }
 .info p:first-of-type{
-    margin-top: -45px;
+    /*margin-top: -45px;*/
 }
 .center{
     display: flex!important;
@@ -466,7 +466,7 @@ table.contact-info td:first-child{
          background-position: top!important;
     }
     .info p:first-of-type{
-        margin-top: -25px;
+        /*margin-top: -25px;*/
     }
      .info p{
         font-size: 0.8em!important;
