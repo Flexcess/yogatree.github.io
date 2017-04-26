@@ -697,6 +697,18 @@ table.contact-info td:first-child{
         height: 1000px;
     }
 }
+@media(min-width: 538px) and (max-width:740px){
+    .t9 + img{
+        display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: url(../images/testimonials/mobt1.jpg) no-repeat;
+        width: 100%!important;
+        max-height: 400px!important;
+        padding-left: 80px;
+    }
+}
+
 @media(min-width: 1384){
     .mainBanner {
         height: 850px;
