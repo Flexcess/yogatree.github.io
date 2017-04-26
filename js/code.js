@@ -30,12 +30,9 @@ $(function(){
             slidesToScroll: 1,
             adaptiveHeight: true,
         });
-        // $(".t6 p:not(last-of-type)").als({
-        //     orientation: "vertical",
-        //     autoscroll: "yes"
-        // });
+
         $('.testimonial-parent.slick-slider').slick({
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 10000,
             dots: true,
             arrows: false,
@@ -44,7 +41,6 @@ $(function(){
             adaptiveHeight: true,
         });
         autoScrollVertical($(".t1 .description"));
-        // $(".bg-testimonial .description").slimScroll();
         $('.testimonial-parent.slick-slider').on("afterChange", function () {
             $(".t" + (arguments[2] == 0 ? '11' : (arguments[2] + 1) ) + " .description").scrollTop(0);
             var div = $(".t" + (arguments[2] + 1) + " .description");
@@ -53,6 +49,7 @@ $(function(){
         });
         $(window).on('resize orientationchange', function () {
             $('.slick-slider').slick('resize');
+            autoScrollVertical($('.slick-current.slick-active .description').scrollTop(0));
         });
         $(document).click(function (event) {
             if (!$(event.target).closest('#sidemenu').length && !($(event.target).is('.hamburger'))) 
