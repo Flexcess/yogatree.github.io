@@ -1,3 +1,24 @@
+function autoScrollVertical(div){
+    div.bind('scroll mousedown wheel DOMMouseScroll mousewheel keyup', function (evt) {
+        if (evt.type === 'DOMMouseScroll' || evt.type === 'keyup' || evt.type === 'mousewheel') {
+
+        }
+        if (evt.originalEvent.detail < 0 || (evt.originalEvent.wheelDelta && evt.originalEvent.wheelDelta > 0)) {
+            clearInterval(scrollbit);
+        }
+        if (evt.originalEvent.detail > 0 || (evt.originalEvent.wheelDelta && evt.originalEvent.wheelDelta < 0)) {
+            clearInterval(scrollbit);
+        }
+    });
+
+    var scrollbit = setInterval(function () {
+        var pos = div.scrollTop();
+        if ((div.scrollTop() + div.innerHeight()) >= div[0].scrollHeight) {
+            clearInterval(scrollbit);
+        }
+        div.scrollTop(pos + 1);
+    }, 250);
+}
 $(function(){
         $('#sidemenu').hide();
         $('.main.slick-slider').slick({
@@ -9,14 +30,26 @@ $(function(){
             slidesToScroll: 1,
             adaptiveHeight: true,
         });
+        // $(".t6 p:not(last-of-type)").als({
+        //     orientation: "vertical",
+        //     autoscroll: "yes"
+        // });
         $('.testimonial-parent.slick-slider').slick({
             // autoplay: true,
-            autoplaySpeed: 7000,
+            autoplaySpeed: 10000,
             dots: true,
             arrows: false,
             slidesToShow: 1,
             slidesToScroll: 1,
-            // adaptiveHeight: true,
+            adaptiveHeight: true,
+        });
+        autoScrollVertical($(".t1 .description"));
+        // $(".bg-testimonial .description").slimScroll();
+        $('.testimonial-parent.slick-slider').on("afterChange", function () {
+            $(".t" + (arguments[2] == 0 ? '11' : (arguments[2] + 1) ) + " .description").scrollTop(0);
+            var div = $(".t" + (arguments[2] + 1) + " .description");
+
+            autoScrollVertical(div);
         });
         $(window).on('resize orientationchange', function () {
             $('.slick-slider').slick('resize');
