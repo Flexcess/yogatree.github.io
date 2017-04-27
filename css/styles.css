@@ -354,7 +354,7 @@ h4 {
     overflow: hidden;
 }
 .bg.bg-testimonial .description:hover { overflow-y:auto; }
-table.contact-info td{
+table.contact-info td, table.contact-info tr{
     background: #ffffff; 
 }
 table.contact-info td:first-child{
