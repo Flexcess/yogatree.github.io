@@ -387,11 +387,7 @@ table.contact-info td:first-child{
 .mainBanner .info{
     text-align: center;
 }
- @media (max-width: 349px){
-     .bg-venue {
-        height: 160px!important;
-    }
- }
+
 @media (min-width: 535px){
     .bg{
         background-size: cover;
@@ -687,7 +683,7 @@ table.contact-info td:first-child{
     .mainBanner{
         height:270px!important;
     }
-    .slick-dots{
+    .testimonial-parent .slick-dots{
         display: none!important;
     }
     .info{
@@ -996,8 +992,17 @@ table.contact-info td:first-child{
     }
 }
 @media (max-width: 480px){
+    .bg.mainBanner.center {
+        margin-top:50px;
+    }
     .info {
         font-size: 1.3rem!important;
+    }
+    .info h2{
+        font-size: 3em;
+    }
+    .info p{
+        font-size: 0.7em;
     }
     #booking.bg-today.bg{
         background-size: contain;
@@ -1011,6 +1016,7 @@ table.contact-info td:first-child{
         height: 200px;
     }
  }
+ 
  @media  (min-width:400px) and (max-width: 450px){
     #booking.bg-today.bg{
         background-size: contain;
@@ -1018,14 +1024,28 @@ table.contact-info td:first-child{
     }
  }
  @media (max-width: 400px){
+      .bg-venue{
+        height: 180px;
+      }
      .bg-venue, .bg-class {
         background-size: contain;
+    }
+    .bg-class{
         height: 85px;
     }
    #booking.bg{
         height: 170px;
     }
  }
+ @media (max-width: 349px){
+     .bg-venue {
+        height: 160px!important;
+    }
+    .main .bg.mainBanner.center {
+        height: 215px!important;
+    }
+ }
+
 @media (min-width:1600px){
     .bg-bldg, .bg.bg-class{
         background-size: cover!important;
