@@ -195,13 +195,15 @@ header .row{
 .bg-gray, .bg-gray *{
     background-color: #ededed;
 }
-
+.mtop-0{
+        margin-top: 0;
+}
 .tgap-l{
-    padding-top: 20px;
+    padding-top: 100px;
 }
 
 .bgap-l{
-    padding-bottom: 20px;
+    padding-bottom: 100px;
 }
 
 table.border-none td, table.border-none th, table.border-none, .border-none{
@@ -505,6 +507,12 @@ table.contact-info td:first-child{
         margin-top: 50px;
         margin-bottom: 50px;
     }
+    .tgap-l{
+        padding-top: 50px;
+    }
+    .bgap-l{
+        padding-bottom: 50px;
+    }
     h2{
         font-size: 4em;
         margin-bottom: 0;
@@ -680,8 +688,14 @@ table.contact-info td:first-child{
     }
 }
 @media (max-width:565px){
+    #booking{
+        height: auto;
+    }
     .mainBanner{
         height:270px!important;
+    }
+    .slick-dots{
+        visibility: hidden;
     }
 }
 @media(min-width: 538px) and (max-width:765px){
@@ -926,8 +940,8 @@ table.contact-info td:first-child{
     .bg-today .info{
         padding-top: 40px;
     }
-    .mob-tgap-l{
-        margin-top: 40px;
+    .tab-tgap-l{
+        margin-top: 50px;
     }
     .bg.bg-testimonial .description {
         font-size: 1.1em;
@@ -1036,7 +1050,7 @@ table.contact-info td:first-child{
 }
 @media (max-width: 460px){
     .bg-today .info {
-           padding-top: 60px;
+           padding-top: 0px;
     }
      .testimonial-parent{
         height: 1000px;
