@@ -474,7 +474,7 @@ table.contact-info td:first-child{
         background-image: url(../images/mob_t3a.png)!important;
     }
     .t4{
-        background-image: url(../images/mob_t4b.jpg)!important;
+        background-image: url(../images/mob_t4b.png)!important;
     }
     .t5{
         background-image: url(../images/mob_t5.png)!important;
@@ -499,7 +499,7 @@ table.contact-info td:first-child{
     }
     .bg.bg-testimonial {
          background-size: contain!important;
-         background-position: top!important;
+         background-position: center 100%!important;
     }
      table.contact-info tr {
          border: none; 
