@@ -133,6 +133,12 @@ header .row{
 .bg.bg-testimonial .slick-dots button{
     box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.3);
 }
+.slick-dots li button {
+    background: rgba(189,189,189,.8);
+}
+.slick-dots li.slick-active button {
+    background: #fff;
+}
 .bg.bg-testimonial button.slick-arrow{
     box-shadow: none;
 }
@@ -293,6 +299,9 @@ h4 {
  table.contact-info td img{
         width:32px
 }
+.slick-dots {
+    bottom: -5px;
+}
 /* Top bar*/
 .topnav {
   overflow: hidden;
@@ -347,6 +356,9 @@ table.contact-info td{
 table.contact-info td:first-child{
     width: 25px;
 }
+.slick-slider {
+    margin-bottom: 0px;
+}
 .trainer{
     height: 450px;
     display: flex;
@@ -375,7 +387,11 @@ table.contact-info td:first-child{
 .mainBanner .info{
     text-align: center;
 }
- 
+ @media (max-width: 349px){
+     .bg-venue {
+        height: 160px!important;
+    }
+ }
 @media (min-width: 535px){
     .bg{
         background-size: cover;
@@ -400,6 +416,9 @@ table.contact-info td:first-child{
     .info h2{
         margin-bottom: 5px;
     }
+    #booking.bg.bg-today{
+        height: 150px;
+    }
 }
 @media (min-width: 648px){
      .info p{
@@ -415,6 +434,12 @@ table.contact-info td:first-child{
 @media (min-width: 1100px){
     .info {
         font-size: 2.5rem;
+    }
+    .bg-venue {
+        height: 570px;
+    }
+    .bg.bg-class{
+        height:200px;
     }
 }
 @media (min-width: 546px) and (max-width: 775px){
@@ -477,7 +502,7 @@ table.contact-info td:first-child{
      .bg-bldg{
         height:465px;
     }
-    .bg.bg-class{
+    .bg-class{
         height:110px;
         background-size: cover;
     }
@@ -491,14 +516,14 @@ table.contact-info td:first-child{
         width: auto;
     }
     .section{
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
     .tgap-l{
-        padding-top: 50px;
+        padding-top: 40px;
     }
     .bgap-l{
-        padding-bottom: 50px;
+        padding-bottom: 40px;
     }
     h2{
         font-size: 4em;
@@ -518,9 +543,12 @@ table.contact-info td:first-child{
       padding-right: 0;
     }
     .bg-venue{
-        height: 255px;
+        height: 350px;
     }
-    .bg-bldg, .bg-class{
+   .bg-class {
+        height: 85px;
+    }
+    .bg-bldg {
         height: 155px;        
     }
     div.preset{
@@ -551,13 +579,13 @@ table.contact-info td:first-child{
         height: 220px;
         background-size: contain!important;
     }
-    .bg-venue{
-        background-size: contain;
-    }
 }
 
 @media (min-width: 768px){
-    
+    .section{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
     .font-light{
         font-weight: 100;
     }
@@ -569,7 +597,7 @@ table.contact-info td:first-child{
         height: 235px;
     }
     .bg.bg-class{
-        height:310px;
+        height:175px;
     }
    
     #booking{
@@ -586,7 +614,6 @@ table.contact-info td:first-child{
        background-size: cover;
     }
     .bg-venue{
-        background-size: contain;
         height: 400px;
     }
      .bg.center:not(.bg-testimonial){
@@ -594,10 +621,9 @@ table.contact-info td:first-child{
         margin-top: 40px;
     }
 }
-
 @media (min-width: 846px){
-    .bg-venue {
-        background-size: cover;
+    .bg-venue{
+        height: 450px;
     }
     .bg-bldg {
         height: 260px;
@@ -625,11 +651,9 @@ table.contact-info td:first-child{
         height:465px;
     }
    .bg-venue{
-        background-size: contain;
-        height: 700px;
+        height: 520px;
     }
     #logo {
-        /*max-height: 88%;*/
         width: 100px;
     }
     header{
@@ -650,9 +674,6 @@ table.contact-info td:first-child{
         height: 550px;
         padding-top: 0;
     }
-    .bg-venue{
-        background-size: contain;
-    }
 }
 @media(min-width: 1470px){
     .bg-venue {
@@ -667,13 +688,16 @@ table.contact-info td:first-child{
         height:270px!important;
     }
     .slick-dots{
-        visibility: hidden;
+        display: none!important;
     }
     .info{
         font-size: 1.6rem!important;
     }
 }
 @media(min-width: 538px) and (max-width:765px){
+     .bg-class {
+        height: 170px;
+    }
     .bg.bg-testimonial {
         height: 400px;
     }
@@ -690,6 +714,9 @@ table.contact-info td:first-child{
         width: 100%!important;
         max-height: 400px!important;
         padding-left: 80px;
+    }
+    .bg-class {
+        height: 160px;
     }
 }
 @media(min-width: 1384){
@@ -727,17 +754,17 @@ table.contact-info td:first-child{
 }
 @media (min-width:1384px) and (max-width:1409px){
 }
-@media (min-width:1410px){
-}
-@media(min-width: 1095px) and (max-width:1272px){
+
+@media(min-width: 1031px) and (max-width:1272px){
     .mainBanner {
         height: 750px;
     }
     .bg.bg-testimonial .description {
         font-size: 0.8em;
     }
-}
-@media(min-width: 1031px) and (max-width:1272px){
+    .bg-venue {
+        height: 565px;
+    }
     .bg.bg-testimonial{
         max-width: 48%;
         -webkit-flex-basis: 51%;
@@ -765,6 +792,14 @@ table.contact-info td:first-child{
         padding-left: 100px;
         padding-right: 100px;
     }
+    .bg-venue {
+        height: 660px;
+    }
+}
+@media (min-width:1410px){
+    .bg-venue {
+        height: 765px;
+    }
 }
 @media(min-width: 1375px) and (max-width:1385px){
      .bg.bg-testimonial{
@@ -784,6 +819,12 @@ table.contact-info td:first-child{
         flex-basis: 54%;
         padding-left: 80px;
         padding-right: 80px;
+    }
+    .bg-venue {
+        height: 600px;
+    }
+    .bg.bg-class{
+        height:250px;
     }
 }
 @media (min-width:945px) and (max-width:980px){
@@ -876,7 +917,7 @@ table.contact-info td:first-child{
         max-height: 100%;
     }
     .testimonial-parent{
-        height: 1000px!important;
+        height: auto;
     }
 }
 @media  (max-width:824px){
@@ -906,10 +947,16 @@ table.contact-info td:first-child{
         height:380px!important;
     }
     .testimonial-parent{
-            height: 880px!important;
+            /*height: 880px;*/
     }
     #booking {
         height: 280px;
+    }
+    .bg-venue {
+        height: 300px;
+    }
+    .bg-class {
+        height: 120px;
     }
 }
 @media (max-width: 551px){
@@ -931,14 +978,11 @@ table.contact-info td:first-child{
         height: 160px;
     }
     .bg-venue{
-        height: 300px;
+        height: 260px;
     }
     .bg.bg-testimonial{
         height: 450px;
         padding-top: 10px;
-    }
-    .testimonial-parent{
-            height: 850px!important;
     }
     .testimonial img{
         max-height: 100%;
@@ -947,32 +991,41 @@ table.contact-info td:first-child{
         height:450px!important;
         background-size: cover;
     }
-    #booking {
-        height: 240px!important;
+    #booking.bg{
+        height: 230px;
     }
 }
-@media (max-width: 505px){
-    .testimonial-parent{
-            height: 750px!important;
+@media (max-width: 480px){
+    .info {
+        font-size: 1.3rem!important;
     }
-    #booking {
-       background-size: contain;
+    #booking.bg-today.bg{
+        background-size: contain;
+        height: 220px
     }
-}
-@media (min-width:1272px) and (max-width: 764px){
-    .bg.bg-today {
-           height: 555px!important;
-    }
-}
-
-@media (max-width: 460px){
     .bg-today .info {
-           padding-top: 0px;
+        padding-top: 0px;
     }
-     .testimonial-parent{
-        height: 1000px;
+     .bg-venue {
+        background-size: cover;
+        height: 200px;
     }
-}
+ }
+ @media  (min-width:400px) and (max-width: 450px){
+    #booking.bg-today.bg{
+        background-size: contain;
+        height: 200px
+    }
+ }
+ @media (max-width: 400px){
+     .bg-venue, .bg-class {
+        background-size: contain;
+        height: 85px;
+    }
+   #booking.bg{
+        height: 170px;
+    }
+ }
 @media (min-width:1600px){
     .bg-bldg, .bg.bg-class{
         background-size: cover!important;
@@ -1000,10 +1053,16 @@ table.contact-info td:first-child{
     .bg.bg-today {
            height: 700px!important;
     }
+    .bg.bg-class{
+        height:300px;
+    }
 }
 @media (min-width:1371px) and (max-width: 1449px){
     .bg.bg-today {
            height: 620px!important;
+    }
+    .bg.bg-class{
+        height:280px;
     }
 }
 @media (min-width:1291px) and (max-width: 1370px){
