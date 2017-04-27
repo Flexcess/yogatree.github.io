@@ -402,6 +402,18 @@ table.contact-info td:first-child{
         background-size: cover;
     }
 }
+@media  (min-width: 401px) and (max-width: 500px){
+    .bg.mainBanner.center {
+        height: 290px!important;
+    }
+  
+}
+@media  (min-width: 350px) and (max-width: 400px){
+    .bg.mainBanner.center {
+        height: 230px!important;
+    }
+  
+}
 @media (max-width: 334px){
     .info{
         font-size: 1.3rem;
@@ -430,6 +442,7 @@ table.contact-info td:first-child{
 @media (min-width: 1100px){
     .info {
         font-size: 2.5rem;
+        padding-top: 50px;
     }
     .bg-venue {
         height: 570px;
@@ -565,7 +578,7 @@ table.contact-info td:first-child{
     }
     .bg.center:not(.bg-testimonial){
         align-items: flex-start;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     .bg.bg-testimonial{
         align-items: center;
