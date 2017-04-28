@@ -138,7 +138,7 @@ header .row{
     box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.3);
 }
 .slick-dots li button {
-    background: rgba(189,189,189,.8);
+    background: rgba(162, 162, 162, 0.8);
 }
 .slick-dots li.slick-active button {
     background: #fff;
@@ -715,7 +715,7 @@ table.contact-info td:first-child{
         height: 400px;
     }
     .testimonial-parent{
-        height: 1000px;
+        /*height: 1000px;*/
     }
 }
 @media(min-width: 538px) and (max-width:740px){
@@ -741,7 +741,7 @@ table.contact-info td:first-child{
          /*background-size: cover!important;*/
     }
     .testimonial-parent{
-        height: 415px;
+        /*height: 415px;*/
     }
     .testimonial img{
         max-height: 410px;
@@ -762,7 +762,7 @@ table.contact-info td:first-child{
 }
 @media (max-width:1383px){
     .testimonial-parent{
-        height: 400px;
+        /*height: 400px;*/
     }
 }
 @media (min-width:1384px) and (max-width:1409px){
@@ -853,7 +853,7 @@ table.contact-info td:first-child{
         font-size: 0.8em;
     }
     .testimonial-parent{
-        height: 350px;
+        /*height: 350px;*/
     }
     .testimonial img{
         max-height: 321px;
@@ -1082,7 +1082,7 @@ table.contact-info td:first-child{
         max-height: 418px;
     }
     .testimonial-parent{
-        height: 435px;
+        /*height: 435px;*/
     }
 }
 /* Today section */
