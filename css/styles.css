@@ -134,14 +134,13 @@ header .row{
 .bg.bg-testimonial, .bg.bg-testimonial h3{
     color: #ffffff;
 }
-.bg.bg-testimonial .slick-dots button{
-    box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.3);
-}
+
 .slick-dots li button {
-    background: rgba(162, 162, 162, 0.8);
+    box-shadow: none!important;
+    background: #b9cd33;
 }
 .slick-dots li.slick-active button {
-    background: #fff;
+    background: #85b24d;
 }
 .bg.bg-testimonial button.slick-arrow{
     box-shadow: none;
@@ -304,7 +303,7 @@ h4 {
         width:32px
 }
 .slick-dots {
-    bottom: -5px;
+    /*bottom: -15px;*/
 }
 /* Top bar*/
 .topnav {
@@ -700,7 +699,7 @@ table.contact-info td:first-child{
     .mainBanner{
         height:270px!important;
     }
-    .testimonial-parent .slick-dots{
+    .slick-dots{
         display: none!important;
     }
     .info{

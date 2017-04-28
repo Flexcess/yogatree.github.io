@@ -24,7 +24,7 @@ $(function(){
         $('.main.slick-slider').slick({
             autoplay: true,
             autoplaySpeed: 3000,
-            dots: false,
+            dots: true,
             arrows: false,
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -34,7 +34,7 @@ $(function(){
         $('.testimonial-parent.slick-slider').slick({
             autoplay: true,
             autoplaySpeed: 10000,
-            dots: false,
+            dots: true,
             arrows: false,
             slidesToShow: 1,
             slidesToScroll: 1,
