@@ -66,11 +66,9 @@ $(function(){
         })
         $('.hamburger').click(function () {
             if($(this).hasClass('active'))
-                // $('#sidemenu').animate({ top: "-1000px" }, 500)   
                 $('#sidemenu').slideUp();  
             else
                 $('#sidemenu').slideDown();  
-                // $('#sidemenu').animate({ top: "140px" }, 500)
             $('.hamburger').toggleClass('active');
         })
 
@@ -82,11 +80,13 @@ $(function(){
         });
         $('.trainer').click(function(){
             $('.trainer.active').not($(this)).find('img').fadeIn().end().removeClass('active');
-            if (!$(this).hasClass('active')){
-                $(this).find('img').fadeOut();
-            }else{
-                $(this).find('img').fadeIn();
+            if (!$(this).find('.text').is(':empty')){
+                if (!$(this).hasClass('active')){
+                    $(this).find('img').fadeOut();
+                }else{
+                    $(this).find('img').fadeIn();
+                }
+               $(this).toggleClass('active');
             }
-            $(this).toggleClass('active');
         })
 });

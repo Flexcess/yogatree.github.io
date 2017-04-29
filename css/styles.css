@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');*/
 body{
     background: #ffffff;
     overflow-x: hidden;
@@ -28,9 +27,9 @@ header, footer{
 
 header{
     overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed;
+    top: 0;
+    width: 100%; 
     z-index: 100;
 }
 .content{
@@ -111,7 +110,6 @@ header .row{
     border-right: none!important;
 }
 .testimonial .row{
-    /*justify-content: center;*/
     justify-content: space-between;
     align-items: center;
 }
@@ -144,9 +142,6 @@ header .row{
 }
 .bg.bg-testimonial button.slick-arrow{
     box-shadow: none;
-}
-.bg.bg-testimonial, .testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row{
-    /*height: 490px;*/
 }
 .bg.bg-testimonial p{
     line-height: 1.3!important;
@@ -648,9 +643,6 @@ table.contact-info td:first-child{
 }
 @media only screen and (min-width: 981px){
     
-    .testimonial .row{
-        /*align-items: center;*/
-    }
     .info p{
         color: #b02840;
         font-size: 0.8em
@@ -682,7 +674,6 @@ table.contact-info td:first-child{
      display: block;   
     }
     #booking{
-        /*background-size: cover;*/
         height: 550px;
         padding-top: 0;
     }
@@ -713,9 +704,6 @@ table.contact-info td:first-child{
     .bg.bg-testimonial {
         height: 400px;
     }
-    .testimonial-parent{
-        /*height: 1000px;*/
-    }
 }
 @media(min-width: 538px) and (max-width:740px){
     .t9 + img{
@@ -737,10 +725,6 @@ table.contact-info td:first-child{
     }
     .bg.bg-testimonial {
         height: 410px;
-         /*background-size: cover!important;*/
-    }
-    .testimonial-parent{
-        /*height: 415px;*/
     }
     .testimonial img{
         max-height: 410px;
@@ -748,20 +732,13 @@ table.contact-info td:first-child{
     .testimonial .t4 + div img{
         max-height: 409px!important;
     }
-    /*.testimonial-parent.slick-slider, .testimonial-parent.slick-slider .row{
-        height: 410px;
-    }*/
     .testimonial .row[class*=col-sm-]>*:last-child, .testimonial [class^=col-sm-]:last-child{
         display: flex;
         justify-content: flex-end;
     }
-    .testimonial .row [class*=col-sm-]:not(:last-child) *{
-        /*padding-left: 90px;*/
-    }
 }
 @media (max-width:1383px){
     .testimonial-parent{
-        /*height: 400px;*/
     }
 }
 @media (min-width:1384px) and (max-width:1409px){
@@ -850,9 +827,6 @@ table.contact-info td:first-child{
     }
     .bg.bg-testimonial .description{
         font-size: 0.8em;
-    }
-    .testimonial-parent{
-        /*height: 350px;*/
     }
     .testimonial img{
         max-height: 321px;
@@ -957,9 +931,6 @@ table.contact-info td:first-child{
 @media (min-width: 552px) and (max-width:691px){
     .mainBanner {
         height:380px!important;
-    }
-    .testimonial-parent{
-            /*height: 880px;*/
     }
     #booking {
         height: 280px;
@@ -1079,9 +1050,6 @@ table.contact-info td:first-child{
     }
      .testimonial img{
         max-height: 418px;
-    }
-    .testimonial-parent{
-        /*height: 435px;*/
     }
 }
 /* Today section */
