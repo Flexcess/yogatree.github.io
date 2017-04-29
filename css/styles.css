@@ -593,11 +593,14 @@ table.contact-info td:first-child{
         margin-top: 60px;
         margin-bottom: 60px;
     }
+    .tgap-l {
+        padding-top: 60px;
+    }
+    .bgap-l {
+        padding-bottom: 60px;
+    }
     .font-light{
         font-weight: 100;
-    }
-    .t4{
-        background-size: cover!important
     }
      .bg-bldg {
         background-size: cover!important;
@@ -642,7 +645,16 @@ table.contact-info td:first-child{
     }
 }
 @media only screen and (min-width: 981px){
-    
+    .section{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .tgap-l {
+        padding-top: 100px;
+    }
+    .bgap-l {
+        padding-bottom: 100px;
+    }
     .info p{
         color: #b02840;
         font-size: 0.8em
@@ -735,10 +747,6 @@ table.contact-info td:first-child{
     .testimonial .row[class*=col-sm-]>*:last-child, .testimonial [class^=col-sm-]:last-child{
         display: flex;
         justify-content: flex-end;
-    }
-}
-@media (max-width:1383px){
-    .testimonial-parent{
     }
 }
 @media (min-width:1384px) and (max-width:1409px){
