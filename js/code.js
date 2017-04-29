@@ -52,11 +52,11 @@ $(function(){
             autoScrollVertical($('.slick-current.slick-active .description').scrollTop(0));
         });
         $(document).click(function (event) {
-            if (!$(event.target).closest('#sidemenu').length && !($(event.target).is('.hamburger'))) 
+            if (!$(event.target).closest('#sidemenu').length && !($(event.target).is('.hamburger')))
                 if ($('#sidemenu').is(":visible")) {
                     $('.hamburger').removeClass('active');
-                    // $('#sidemenu').animate({ top: "-1000px" }, 500)  
-                    $('#sidemenu').slideUp();  
+                    // $('#sidemenu').animate({ top: "-1000px" }, 500)
+                    $('#sidemenu').slideUp();
                 }
             if (!$(event.target).closest('.trainer').length && !($(event.target).is('.trainer')))
                 if ($('.trainer.active').find('.text').is(":visible")) {
@@ -66,9 +66,9 @@ $(function(){
         })
         $('.hamburger').click(function () {
             if($(this).hasClass('active'))
-                $('#sidemenu').slideUp();  
+                $('#sidemenu').slideUp();
             else
-                $('#sidemenu').slideDown();  
+                $('#sidemenu').slideDown();
             $('.hamburger').toggleClass('active');
         })
 
@@ -79,14 +79,56 @@ $(function(){
             return false;
         });
         $('.trainer').click(function(){
-            $('.trainer.active').not($(this)).find('img').fadeIn().end().removeClass('active');
+            $('.trainer.active').not($(this)).find('img').fadeIn(500).end().removeClass('active');
             if (!$(this).find('.text').is(':empty')){
                 if (!$(this).hasClass('active')){
-                    $(this).find('img').fadeOut();
-                }else{
-                    $(this).find('img').fadeIn();
+                    $(this).find('img').fadeOut(500);
+                } else{
+                    $(this).find('img').fadeIn(500);
                 }
                $(this).toggleClass('active');
             }
-        })
+        });
+        $("#submit").click(function () {
+            $('[data-required = true]').each(function () {
+                if (!$(this).val().length) {
+                    alert('Please enter a value for ' + $(this).attr('label'));
+                    return false;
+                }
+                function validateEmail(email) {
+                    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                    return re.test(email);
+                }
+
+                if (!validateEmail($('input[name="email"]').val())) {
+                    alert('Please enter a valid email');
+                    return false;
+                }
+            });
+            var jsonObj = {};
+            debugger;
+            $('form[name="contact"] [name]').each(function () {
+                var prop = $(this).attr('name');
+                jsonObj[prop] = $(this).val()
+            });
+            $.ajax({
+                type: "POST",
+                url: (location.href.substring(0, location.href.lastIndexOf("/") + 1)) + "send-mail.php",
+                data: {
+                    action: 'post',
+                    json: JSON.stringify(jsonObj),
+                },
+                success: function (output) {
+                    debugger;
+                    console.log(output);
+                    if (output == 'Mail Sent Successfully') {
+                        alert('An email has been send with your details');
+                        $('form[name="contact"] [name]').val('');
+                    } else {
+                        alert('Failed while sending an email!');
+                    }
+                }
+            });
+            return false;
+        });
 });
