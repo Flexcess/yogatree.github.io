@@ -302,7 +302,7 @@ h4 {
    font-size: 2.5em;
 }
 .mainBanner{
-   height:950px;
+   /*height:950px;*/
 }
 table.contact-info td img{
    width:32px
@@ -437,13 +437,13 @@ table.contact-info td:first-child{
 }
 @media  (min-width: 401px) and (max-width: 500px){
    .bg.mainBanner.center {
-      height: 290px!important;
+      /*height: 290px!important;*/
    }
 
 }
 @media  (min-width: 350px) and (max-width: 400px){
    .bg.mainBanner.center {
-      height: 230px!important;
+      /*height: 230px!important;*/
    }
 
 }
@@ -615,7 +615,7 @@ table.contact-info td:first-child{
       height: 330px;
    }
    .mainBanner{
-      height:460px!important;
+      /*height:460px!important;*/
    }
    .bg.center:not(.bg-testimonial){
       align-items: flex-start;
@@ -769,7 +769,7 @@ table.contact-info td:first-child{
       height: auto;
    }
    .mainBanner{
-      height:270px!important;
+      /*height:270px!important;*/
    }
    .slick-dots{
       display: none!important;
@@ -802,7 +802,7 @@ table.contact-info td:first-child{
 }
 @media(min-width: 1384){
    .mainBanner {
-      height: 850px;
+      /*height: 850px;*/
    }
    .bg.bg-testimonial {
       height: 410px;
@@ -827,7 +827,7 @@ table.contact-info td:first-child{
 
 @media(min-width: 1031px) and (max-width:1272px){
    .mainBanner {
-      height: 750px;
+      /*height: 750px;*/
    }
    .bg.bg-testimonial .description {
       font-size: 0.8em;
@@ -1000,7 +1000,7 @@ table.contact-info td:first-child{
 }
 @media(min-width: 760px) and (max-width:1094px){
    .mainBanner {
-      height: 550px;
+      /*height: 550px;*/
    }
    #booking {
       height: 380px;
@@ -1011,7 +1011,7 @@ table.contact-info td:first-child{
 }
 @media (min-width: 552px) and (max-width:691px){
    .mainBanner {
-      height:380px!important;
+      /*height:380px!important;*/
    }
    #booking {
       height: 280px;
@@ -1025,8 +1025,8 @@ table.contact-info td:first-child{
 }
 @media (max-width: 551px){
    .mainBanner.bg {
-      height: 330px!important;
-      background-size: contain;
+      /*height: 330px!important;*/
+      /*background-size: contain;*/
    }
    .bg.bg-testimonial p{
       font-size: 1.1em;
@@ -1052,7 +1052,7 @@ table.contact-info td:first-child{
       max-height: 100%;
    }
    .mainBanner{
-      height:450px!important;
+      /*height:450px!important;*/
       background-size: cover;
    }
    #booking.bg{
@@ -1111,7 +1111,7 @@ table.contact-info td:first-child{
       height: 160px!important;
    }
    .main .bg.mainBanner.center {
-      height: 215px!important;
+      /*height: 215px!important;*/
    }
 }
 
