@@ -283,7 +283,7 @@ table.preset td.green{
    flex-direction: column;
 }
 #header.container a:hover, #sidemenu a:hover{
-   background: none;
+   background: transparent;
    color: #b2d81f;
 }
 

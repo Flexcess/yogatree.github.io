@@ -20,6 +20,8 @@ function autoScrollVertical(div){
    }, 250);
 }
 function resizeBGImageParents() {
+    document.getElementById('load').style.visibility = "visible";
+    var count = $('.mainBanner').length;
     $('.mainBanner').each(function () {
         var imageSrc = $(this).css('background-image'),
             image_url = imageSrc.match(/^url\("?(.+?)"?\)$/),
@@ -38,6 +40,10 @@ function resizeBGImageParents() {
 
                 $self.css('height', newHeight);
                 console.log('height (' + initialHeight + ') changed to: ' + newHeight)
+                if (--count == 0){
+                    document.getElementById('load').style.visibility = "hidden";
+                    
+                }
             });
         }
     });
@@ -89,6 +95,17 @@ $(function(){
       resizeBGImageParents();
       offsetBannerInfo();
    });
+   document.onreadystatechange = function () {
+       var state = document.readyState
+       if (state == 'interactive') {
+           $('.content').css('visibility', "hidden");
+       } else if (state == 'complete') {
+           setTimeout(function () {
+               document.getElementById('load').style.visibility = "hidden";
+               $('.content').css('visibility', "visible");
+           }, 1000);
+       }
+   }
    $(document).click(function (event) {
       if (!$(event.target).closest('#sidemenu').length && !($(event.target).is('.hamburger')))
       if ($('#sidemenu').is(":visible")) {
