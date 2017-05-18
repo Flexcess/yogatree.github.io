@@ -34,7 +34,7 @@ function resizeBGImageParents() {
                 debugger;
                 var aspectRatio = this.width / this.height,
                     initialHeight = $self.outerHeight(),
-                    newHeight = ((window.outerWidth / aspectRatio) -50) + 'px';
+                    newHeight = ((window.outerWidth / aspectRatio) -10) + 'px';
 
                 $self.css('height', newHeight);
                 console.log('height (' + initialHeight + ') changed to: ' + newHeight)
