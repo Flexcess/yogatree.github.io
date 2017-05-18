@@ -369,7 +369,7 @@ table.contact-info td:first-child{
    margin-bottom: 0px;
 }
 .trainer{
-   height: 450px;
+   height: 380px;
    display: flex;
    flex-direction: column
 }
@@ -407,18 +407,18 @@ table.contact-info td:first-child{
    border-radius: 10px;
 }
 ::-webkit-input-placeholder { /* Chrome */
-  color: #90ab29;
+   color: #90ab29;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: #90ab29;
+   color: #90ab29;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: #90ab29;
-  opacity: 1;
+   color: #90ab29;
+   opacity: 1;
 }
 :-moz-placeholder { /* Firefox 4 - 18 */
-  color: #90ab29;
-  opacity: 1;
+   color: #90ab29;
+   opacity: 1;
 }
 
 @media (min-width: 535px){
@@ -553,7 +553,7 @@ table.contact-info td:first-child{
       background-size: cover;
    }
    .trainer {
-      height: 355px;
+      height: 315px;
       display: flex;
       flex-direction: column;
    }
@@ -606,7 +606,7 @@ table.contact-info td:first-child{
       max-width: 100%;
    }
    .trainer{
-      border-bottom: 2px solid #b9cd33;
+      border-bottom: 2px solid #e6e6e6;
    }
    #trainers .col-sm-12{
       border-right: none!important;
@@ -1024,10 +1024,10 @@ table.contact-info td:first-child{
    }
 }
 @media (max-width: 551px){
-   .mainBanner.bg {
-      /*height: 330px!important;*/
-      /*background-size: contain;*/
-   }
+   /*.mainBanner.bg {
+      height: 330px!important;
+      background-size: contain;
+   }*/
    .bg.bg-testimonial p{
       font-size: 1.1em;
       line-height: 1.3!important;
@@ -1188,9 +1188,19 @@ table.contact-info td:first-child{
    }
 }
 /* Hover effect */
-.trainer{
+.trainer {
    position: relative;
    cursor: pointer;
+}
+.trainer-overlay {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(185, 205, 52, 0.0);
+}
+.trainer-overlay:hover {
+   background-color: rgba(185, 205, 52, 0.5);
+   /*border: 3px solid rgb(185, 205, 52);*/
 }
 .trainer .text {
    opacity:0;
@@ -1207,4 +1217,158 @@ table.contact-info td:first-child{
 .trainer.active .text {
    opacity:1;
    visibility:visible;
+}
+
+
+.modal-open {
+   overflow: hidden;
+}
+.modal-open .modal-backdrop {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1040;
+   background-color: rgba(185, 205, 52, .5);
+}
+.modal {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1041;
+   display: none;
+}
+.modal-content {
+   position: relative;
+   background-color: #fff;
+   -webkit-background-clip: padding-box;
+   background-clip: padding-box;
+   border: 1px solid #999;
+   border: 1px solid rgba(185, 205, 52,.2);
+   border-radius: 6px;
+   outline: 0;
+   -webkit-box-shadow: 0 3px 9px rgba(185, 205, 52,.5);
+   box-shadow: 0 3px 9px rgba(185, 205, 52,.5);
+   padding: 20px;
+}
+.modal-open .modal.open {
+   display: block;
+   overflow-x: hidden;
+   overflow-y: auto;
+}
+.modal-body {
+   text-align: center;
+}
+.modal-body p {
+   text-align: center;
+   color: #b02840;
+   font-weight: 100;
+   font-size: 0.8em;
+}
+.modal .text {
+   font-weight: 100;
+   font-size: 0.9em;
+}
+.modal-body h2 {
+   text-align: center;
+   color: rgb(185, 205, 52);
+}
+.modal-body img {
+   max-height: 350px;
+}
+
+
+
+
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+   .modal-dialog {
+      width: 300px;
+      margin: 15px auto;
+   }
+   .modal-body p {
+      margin-top: -15px;
+   }
+   .trainer .more {
+      height: 15px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+   }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+   .modal-dialog {
+      width: 400px;
+      margin: 20px auto;
+   }
+   .modal-body p {
+      margin-top: -35px;
+   }
+   .trainer .more {
+      height: 15px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+   }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+   .modal-dialog {
+      width: 600px;
+      margin: 30px auto;
+   }
+   .modal-body p {
+      margin-top: -35px;
+   }
+   .trainer .more {
+      height: 15px;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+   }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+   .modal-dialog {
+      width: 800px;
+      margin: 40px auto;
+   }
+   .modal-body p {
+      margin-top: -35px;
+   }
+   .trainer .more {
+      height: 20px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+   }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+   .modal-dialog {
+      width: 800px;
+      margin: 40px auto;
+   }
+   .modal-body p {
+      margin-top: -35px;
+   }
+   .trainer .more {
+      height: 20px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+   }
 }
