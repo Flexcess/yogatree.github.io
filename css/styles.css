@@ -6,15 +6,15 @@ body{
    background: #ffffff;
    overflow-x: hidden;
 }
-header{
+#header, #myTopnav{
    background: rgba(255, 255, 255, 0.95);
-   padding-top: 10px;
+   padding-top: 0;
 }
 #testimonials{
    padding-left: 0;
    padding-right: 0;
 }
-body, header, html{
+body, #header, html{
    font-family: 'Open Sans', sans-serif;
    color: #676868;
 }
@@ -24,26 +24,34 @@ body, header, html{
 button{
    box-shadow: 0 1px 5px rgba(0,0,0,.18), 0 1px 5px rgba(0,0,0,.18)!important;
 }
-header, footer{
+#header, footer{
    height: auto;
 }
 
-header{
+/*header{
    overflow: hidden;
    position: fixed;
    top: 0;
    width: 100%;
    z-index: 100;
+}*/
+#header, #myTopnav{
+    background: transparent;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
 }
 .content{
-   margin-top: 80px;
+   /*margin-top: 80px;*/
 }
 footer{
    margin-top: 0;
    background-color: #aad174;
 }
 
-header>div.container a, form, #holder>div >*{
+#header.container a, form, #holder>div >*{
    color: #a0a0a0;
    background: none!important;
    margin-right: 15px;
@@ -53,12 +61,12 @@ header>div.container a, form, #holder>div >*{
 a{
    text-decoration: none;
 }
-header a:active{
+#header a:active{
    border: none;
    background-color: #ffffff!important;
    outline-color: #ffffff;
 }
-header .row{
+#header .row{
    align-items: center;
 }
 #booking h2, #booking p{
@@ -274,7 +282,7 @@ table.preset td.green{
 .bg-testimonial.center{
    flex-direction: column;
 }
-header>div.container a:hover{
+#header.container a:hover, #sidemenu a:hover{
    background: none;
    color: #b2d81f;
 }
@@ -315,23 +323,23 @@ table.contact-info td img{
    overflow: hidden;
 }
 
-#myTopnav{
+/*#myTopnav{
    padding-top: 10px;
    padding-bottom: 10px;
-}
+}*/
 
 .topnav .drawer{
-   flex-direction: column;
    flex: 1;
-   justify-content: flex-end;
-   text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 .hamburger{
    width: 30px;
    cursor: pointer;
 }
 #holder{
-   background: none;
+   /*background: rgba(255, 255, 255, 0.95);*/
 }
 #holder > div{
    background: none;
@@ -420,7 +428,21 @@ table.contact-info td:first-child{
    color: #90ab29;
    opacity: 1;
 }
-
+@media (max-width:830px){
+  .mb1{
+    background-image: url(../images/explore.png)!important;
+   }
+   .mb2{
+    background-image: url(../images/transform.png)!important;
+   }
+   .mb3{
+    background-image: url(../images/journey.png)!important;
+   }
+   .info {
+        font-size: 3.5rem;
+        padding-top: 50px;
+    }
+}
 @media (min-width: 535px){
    .bg{
       background-size: cover;
@@ -434,18 +456,6 @@ table.contact-info td:first-child{
    .bg-venue{
       background-size: cover;
    }
-}
-@media  (min-width: 401px) and (max-width: 500px){
-   .bg.mainBanner.center {
-      /*height: 290px!important;*/
-   }
-
-}
-@media  (min-width: 350px) and (max-width: 400px){
-   .bg.mainBanner.center {
-      /*height: 230px!important;*/
-   }
-
 }
 @media (max-width: 334px){
    .info{
@@ -462,12 +472,12 @@ table.contact-info td:first-child{
    }
 }
 @media (min-width: 648px){
-   .info h2{
+   .info h2 {
       font-size: 5em;
    }
    .info p{
-      font-size: 0.5em;
-      margin-top: -52px;
+      font-size: 0.6em;
+      margin-top: -46px;
    }
    .info{
       font-size: 1.7rem;
@@ -478,14 +488,20 @@ table.contact-info td:first-child{
 }
 @media (min-width: 1100px){
    .info {
-      font-size: 3.5rem;
-      padding-top: 50px;
+      font-size: 2.8rem;
+      /*padding-top: 50px;*/
    }
    .bg-venue {
       height: 570px;
    }
    .bg.bg-class{
       height:200px;
+   }
+}
+@media (min-width: 1230px){
+   .info {
+      font-size: 3rem;
+      /*padding-top: 50px;*/
    }
 }
 @media (min-width: 546px) and (max-width: 775px){
@@ -639,7 +655,6 @@ table.contact-info td:first-child{
       font-size: 10px;
    }
 }
-
 @media (min-width: 768px){
    .section{
       margin-top: 60px;
@@ -678,7 +693,7 @@ table.contact-info td:first-child{
    .bg-venue{
       height: 400px;
    }
-   .bg.center:not(.bg-testimonial){
+   .bg.center:not(.bg-testimonial):not(.bg.mainBanner.center){
       align-items: flex-start;
       margin-top: 40px;
    }
@@ -714,12 +729,12 @@ table.contact-info td:first-child{
 }
 @media only screen and (min-width: 981px){
    .info h2 {
-      font-size: 6em;
+      font-size: 4em;
    }
    .info p{
       color: #b02840;
       font-size: 0.6em;
-      margin-top: -60px;
+      margin-top: -46px;
    }
    .mainBanner, .main.slick-slider{
       background-size: cover!important;
@@ -734,10 +749,10 @@ table.contact-info td:first-child{
    #logo {
       width: 100px;
    }
-   header{
+   /*header{
       height: auto;
-   }
-   header>div.container{
+   }*/
+   #header>div.container{
       padding-right: 30px;
       padding-left: 30px;
    }
@@ -754,9 +769,9 @@ table.contact-info td:first-child{
 }
 @media only screen and (min-width: 1100px){
    .info p{
-      color: #b02840;
-      font-size: 0.5em;
-      margin-top: -105px;
+    color: #b02840;
+    font-size: 0.4em;
+    margin-top: -75px;
    }
 }
 @media(min-width: 1470px){
@@ -786,7 +801,7 @@ table.contact-info td:first-child{
       height: 400px;
    }
 }
-@media(min-width: 538px) and (max-width:740px){
+@media (min-width: 538px) and (max-width:740px){
    .t9 + img{
       display: block;
       -moz-box-sizing: border-box;
@@ -800,7 +815,20 @@ table.contact-info td:first-child{
       height: 160px;
    }
 }
-@media(min-width: 1384){
+@media (min-width: 1100) and (max-width:1383px){
+   .info {
+      font-size: 3rem;
+      /*padding-top: 50px;*/
+   }
+}
+@media (min-width: 1384){
+    .info {
+        font-size: 1.7rem;
+    }
+   .info {
+      font-size: 3.5rem;
+      /*padding-top: 50px;*/
+   }
    .mainBanner {
       /*height: 850px;*/
    }
@@ -818,13 +846,6 @@ table.contact-info td:first-child{
       justify-content: flex-end;
    }
 }
-@media (max-width:1383px){
-   .testimonial-parent{
-   }
-}
-@media (min-width:1384px) and (max-width:1409px){
-}
-
 @media(min-width: 1031px) and (max-width:1272px){
    .mainBanner {
       /*height: 750px;*/
@@ -1024,10 +1045,9 @@ table.contact-info td:first-child{
    }
 }
 @media (max-width: 551px){
-   /*.mainBanner.bg {
-      height: 330px!important;
-      background-size: contain;
-   }*/
+   .info p{
+       margin-top: -30px;
+    }
    .bg.bg-testimonial p{
       font-size: 1.1em;
       line-height: 1.3!important;
@@ -1085,7 +1105,6 @@ table.contact-info td:first-child{
       height: 200px;
    }
 }
-
 @media  (min-width:400px) and (max-width: 450px){
    #booking.bg-today.bg{
       background-size: contain;
@@ -1114,7 +1133,6 @@ table.contact-info td:first-child{
       /*height: 215px!important;*/
    }
 }
-
 @media (min-width:1600px){
    .bg-bldg, .bg.bg-class{
       background-size: cover!important;
@@ -1133,6 +1151,39 @@ table.contact-info td:first-child{
    .testimonial img{
       max-height: 418px;
    }
+}
+@media (max-width:960px){
+    .info{
+        font-size: 1.8rem;
+        padding-top: 20px;
+    }
+    .info p{
+        font-size: 0.5em;
+        margin-top: -50px;
+    }
+    .mb1{
+    background-image: url(../images/explore.png)!important;
+   }
+   .mb2{
+    background-image: url(../images/transform.png)!important;
+   }
+   .mb3{
+    background-image: url(../images/journey.png)!important;
+   }
+}
+@media(max-width: 770px){
+    .info{
+        font-size: 2rem;
+    }
+    .info p{
+        font-size: 0.5em;
+       margin-top: -40px;
+    }
+}
+@media (max-width: 500px){
+    .info p{
+       margin-top: -30px;
+    }
 }
 /* Today section */
 @media (min-width:1450px) {
